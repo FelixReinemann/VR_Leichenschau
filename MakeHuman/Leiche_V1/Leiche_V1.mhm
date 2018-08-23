@@ -1,27 +1,28 @@
 # Written by MakeHuman 1.1.1
 version v1.1.1
 tags Leiche_V1
-camera 357.0 355.0 0.490566037736 0.352506487251 0.0636829126385 1.325
-modifier macrodetails-universal/Muscle 0.279000
+camera 356.0 3.5 0.262594330642 0.674989171063 -0.298119352342 1.325
+modifier macrodetails-universal/Muscle 0.238000
 modifier macrodetails/African 0.000000
-modifier macrodetails-proportions/BodyProportions 0.061000
-modifier macrodetails/Gender 0.905000
-modifier macrodetails-height/Height 0.500000
+modifier macrodetails-proportions/BodyProportions 0.238000
+modifier macrodetails/Gender 0.816000
+modifier macrodetails-height/Height 0.599000
 modifier breast/BreastSize 0.500000
-modifier macrodetails/Age 0.823000
+modifier macrodetails/Age 0.816000
 modifier breast/BreastFirmness 0.500000
 modifier macrodetails/Asian 0.000000
+modifier head/head-age-decr|incr 0.088000
 modifier macrodetails/Caucasian 1.000000
-modifier macrodetails-universal/Weight 0.667000
+modifier macrodetails-universal/Weight 0.864000
 tongue tongue01 52ad91a3-caad-4e50-8c38-67634e5e789c
-teeth Teeth_Shape02 a59089de-3180-40e6-8406-bda05bb837ff
-hair short04 e09bfd91-f83f-4f9a-ba8c-4635cd1ae0d8
+teeth Teeth_Shape04 6bfa48b9-fbb2-4e67-ba6e-6ab49863a1d4
+proxy male_generic df01ef58-b37f-479e-9f97-b4c1b9626aa8
+hair short01 766436e9-63ed-4f6a-afa9-99f3acff70a8
 eyelashes Eyelashes01 d533836f-13ad-4836-8b65-051108253cd2
-skeleton default_no_toes.mhskel
 eyebrows eyebrow009 55b3b52a-379e-426d-b320-562ed57202b3
 eyes HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6
 clothesHideFaces True
-skinMaterial skins/middleage_caucasian_male/middleage_caucasian_male.mhmat
-material short04 e09bfd91-f83f-4f9a-ba8c-4635cd1ae0d8 short04.mhmat
+skinMaterial skins/old_caucasian_male/old_caucasian_male.mhmat
+material short01 766436e9-63ed-4f6a-afa9-99f3acff70a8 short01.mhmat
 material HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6 eyes/materials/brown.mhmat
 subdivide False
