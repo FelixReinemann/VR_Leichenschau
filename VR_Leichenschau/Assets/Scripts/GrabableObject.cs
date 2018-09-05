@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(FixedJoint))]
+
 public class GrabableObject : MonoBehaviour {
 	
-	public FixedJoint spring;
+	public FixedJoint fixedJoint;
 	public Rigidbody connectedTo;
 	Rigidbody myRigid;
 	// Use this for initialization
 	void Start () {
 		myRigid = GetComponent<Rigidbody>();
-		spring = GetComponent<FixedJoint>();
+		fixedJoint = GetComponent<FixedJoint>();
+		if(fixedJoint!=null){
+			Destroy(fixedJoint);
+		}
 	}
 	
 	void Update(){
@@ -24,7 +27,8 @@ public class GrabableObject : MonoBehaviour {
 	public void OnGrab(Rigidbody hand){
 		Debug.Log("grab got called");
 		connectedTo = hand;
-		spring.connectedBody = hand;
+		fixedJoint = gameObject.AddComponent<FixedJoint>();
+		fixedJoint.connectedBody = hand;
 		myRigid.useGravity = false;
 		//myRigid.isKinematic = true;
 		//spring.connectedAnchor = grabbedTo.position;
@@ -32,7 +36,8 @@ public class GrabableObject : MonoBehaviour {
 
 	public void Release(){
 		connectedTo = null;
-		spring.connectedBody = null;
+		fixedJoint.connectedBody = null;
+		Destroy(fixedJoint);
 		myRigid.useGravity = true;
 		//myRigid.isKinematic = false;
 	}
