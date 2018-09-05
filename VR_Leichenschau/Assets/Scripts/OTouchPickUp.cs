@@ -9,10 +9,18 @@ public class OTouchPickUp : MonoBehaviour {
 		mask = 1 << LayerMask.NameToLayer("Interactable");
 		col = GetComponent<SphereCollider>();
 		myRigid = GetComponent<Rigidbody>();
+
+		if(hand==Hands.LeftHand){
+			handTrigger = OVRInput.Axis1D.PrimaryHandTrigger;
+		} else {
+			handTrigger = OVRInput.Axis1D.SecondaryHandTrigger;
+		}
 	}
 	
 	public bool grabbing;
 	public SphereCollider col;
+	public Hands hand;
+	OVRInput.Axis1D handTrigger;
 	Rigidbody myRigid;
 	GameObject grabbedObject;
 	// Update is called once per frame
@@ -21,7 +29,7 @@ public class OTouchPickUp : MonoBehaviour {
 	int mask;
 	void Update () {
 		OVRInput.Update();
-		if(OVRInput.Get( OVRInput.Axis1D.PrimaryHandTrigger) > 0 || OVRInput.Get( OVRInput.Axis1D.SecondaryHandTrigger) > 0){
+		if(OVRInput.Get( handTrigger) > 0 ){
 			grabbing = true;
 			//Debug.Log(OVRInput.Get( OVRInput.Axis1D.PrimaryHandTrigger) +" ; "+OVRInput.Get( OVRInput.Axis1D.SecondaryHandTrigger));
 			if(grabbedObject == null){
@@ -42,3 +50,5 @@ public class OTouchPickUp : MonoBehaviour {
 		}
 	}
 }
+
+public enum Hands {LeftHand, RightHand}
