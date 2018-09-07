@@ -10,59 +10,68 @@ ModelImporter:
     100008: Bett
     100010: Bett_2
     100012: Bierfalsche
-    100014: Capsule
-    100016: Cinema4D_Editor
-    100018: Cylinder
-    100020: Decke
-    100022: Fenster
-    100024: Fenster_1
-    100026: Gehause
-    100028: Gehause_2
-    100030: Kalender
-    100032: Kanuf
-    100034: Kanuf_2
-    100036: Kanuf_3
-    100038: Kanuf_4
-    100040: Kanuf_5
-    100042: Kanuf_6
-    100044: Kissen
-    100046: Kissen_2
-    100048: Kissen_3
-    100050: Kissen_4
-    100052: Kissen_5
-    100054: KissenBett
-    100056: KnaufSchrank
-    100058: Kneul
-    100060: Lehne
-    100062: Matratze
-    100064: MedikamentDose
-    100066: MEdikamentschachtel
-    100068: "M\xFCll1"
-    100070: "M\xFClleimer"
-    100072: //RootNode
-    100074: PlastikEimer
-    100076: Pyramid
-    100078: "R\xFCckenlehne"
-    100080: "R\xFCckenlehne_2"
-    100082: Schraenke
-    100084: Schrank1
-    100086: Schrank1_1
-    100088: Schrank1_2
-    100090: Schrank1_3
-    100092: Schrank1_4
-    100094: Schrank1_5
-    100096: Sofa
-    100098: SofaBoden
-    100100: Sofaboden
-    100102: Stifft
-    100104: Teppich
-    100106: Thermometer
-    100108: Tisch
-    100110: Tisch_2
-    100112: "T\xFCr"
-    100114: Uhr
-    100116: Zigarette
-    100118: Zimmer
+    100014: Bilderramen
+    100016: Capsule
+    100018: Cinema4D_Editor
+    100020: Cone
+    100022: Cylinder
+    100024: Decke
+    100026: Fenster
+    100028: Fenster_1
+    100030: Gehause
+    100032: Gehause_2
+    100034: Kalender
+    100036: Kanuf
+    100038: Kanuf_1
+    100040: Kanuf_2
+    100042: Kanuf_2_2
+    100044: Kanuf_2_3
+    100046: Kanuf_3
+    100048: Kanuf_3_2
+    100050: Kanuf_4
+    100052: Kanuf_4_2
+    100054: Kanuf_5
+    100056: Kanuf_5_2
+    100058: Kanuf_5_3
+    100060: Kanuf_6
+    100062: Kissen
+    100064: Kissen_2
+    100066: Kissen_3
+    100068: Kissen_4
+    100070: Kissen_5
+    100072: KissenBett
+    100074: KnaufSchrank
+    100076: Lehne
+    100078: Matratze
+    100080: MedikamentDose
+    100082: MEdikamentschachtel
+    100084: "M\xFCll1"
+    100086: "M\xFClleimer"
+    100088: //RootNode
+    100090: Plane
+    100092: PlastikEimer
+    100094: Pyramid
+    100096: "R\xFCckenlehne"
+    100098: "R\xFCckenlehne_2"
+    100100: Schraenke
+    100102: Schrank1
+    100104: Schrank1_1
+    100106: Schrank1_2
+    100108: Schrank1_3
+    100110: Schrank1_4
+    100112: Schrank1_5
+    100114: Sofa
+    100116: SofaBoden
+    100118: Sofaboden
+    100120: Stifft
+    100122: Teppich
+    100124: Thermometer
+    100126: Tisch
+    100128: Tisch_2
+    100130: "T\xFCr"
+    100132: Uhr
+    100134: Zigarette
+    100136: Zimmer
     400000: Anzeige
     400002: Anzeige_2
     400004: Anzeige_3
@@ -70,413 +79,517 @@ ModelImporter:
     400008: Bett
     400010: Bett_2
     400012: Bierfalsche
-    400014: Capsule
-    400016: Cinema4D_Editor
-    400018: Cylinder
-    400020: Decke
-    400022: Fenster
-    400024: Fenster_1
-    400026: Gehause
-    400028: Gehause_2
-    400030: Kalender
-    400032: Kanuf
-    400034: Kanuf_2
-    400036: Kanuf_3
-    400038: Kanuf_4
-    400040: Kanuf_5
-    400042: Kanuf_6
-    400044: Kissen
-    400046: Kissen_2
-    400048: Kissen_3
-    400050: Kissen_4
-    400052: Kissen_5
-    400054: KissenBett
-    400056: KnaufSchrank
-    400058: Kneul
-    400060: Lehne
-    400062: Matratze
-    400064: MedikamentDose
-    400066: MEdikamentschachtel
-    400068: "M\xFCll1"
-    400070: "M\xFClleimer"
-    400072: //RootNode
-    400074: PlastikEimer
-    400076: Pyramid
-    400078: "R\xFCckenlehne"
-    400080: "R\xFCckenlehne_2"
-    400082: Schraenke
-    400084: Schrank1
-    400086: Schrank1_1
-    400088: Schrank1_2
-    400090: Schrank1_3
-    400092: Schrank1_4
-    400094: Schrank1_5
-    400096: Sofa
-    400098: SofaBoden
-    400100: Sofaboden
-    400102: Stifft
-    400104: Teppich
-    400106: Thermometer
-    400108: Tisch
-    400110: Tisch_2
-    400112: "T\xFCr"
-    400114: Uhr
-    400116: Zigarette
-    400118: Zimmer
-    2100000: Teppich
-    2100002: AusweissHinten
-    2100004: No Name
-    2100006: AsuweisVorne
-    2100008: GlasFenster
-    2100010: Gehause
-    2100012: Schraenke
-    2100014: Weiss
-    2100016: Uhr
-    2100018: Medikament
-    2100020: Thermometer
-    2100022: Boden
-    2100024: "M\xFClleimer"
-    2100026: Kalender
-    2100028: SofaKissen
-    2100030: Bettbezug
-    2100032: Sofa
-    2100034: Matratze
-    2100036: Glasbier
-    2100038: Schraenke.11
-    2100040: Boden.7
-    2100042: Rausfaser
+    400014: Bilderramen
+    400016: Capsule
+    400018: Cinema4D_Editor
+    400020: Cone
+    400022: Cylinder
+    400024: Decke
+    400026: Fenster
+    400028: Fenster_1
+    400030: Gehause
+    400032: Gehause_2
+    400034: Kalender
+    400036: Kanuf
+    400038: Kanuf_1
+    400040: Kanuf_2
+    400042: Kanuf_2_2
+    400044: Kanuf_2_3
+    400046: Kanuf_3
+    400048: Kanuf_3_2
+    400050: Kanuf_4
+    400052: Kanuf_4_2
+    400054: Kanuf_5
+    400056: Kanuf_5_2
+    400058: Kanuf_5_3
+    400060: Kanuf_6
+    400062: Kissen
+    400064: Kissen_2
+    400066: Kissen_3
+    400068: Kissen_4
+    400070: Kissen_5
+    400072: KissenBett
+    400074: KnaufSchrank
+    400076: Lehne
+    400078: Matratze
+    400080: MedikamentDose
+    400082: MEdikamentschachtel
+    400084: "M\xFCll1"
+    400086: "M\xFClleimer"
+    400088: //RootNode
+    400090: Plane
+    400092: PlastikEimer
+    400094: Pyramid
+    400096: "R\xFCckenlehne"
+    400098: "R\xFCckenlehne_2"
+    400100: Schraenke
+    400102: Schrank1
+    400104: Schrank1_1
+    400106: Schrank1_2
+    400108: Schrank1_3
+    400110: Schrank1_4
+    400112: Schrank1_5
+    400114: Sofa
+    400116: SofaBoden
+    400118: Sofaboden
+    400120: Stifft
+    400122: Teppich
+    400124: Thermometer
+    400126: Tisch
+    400128: Tisch_2
+    400130: "T\xFCr"
+    400132: Uhr
+    400134: Zigarette
+    400136: Zimmer
+    2100000: Becher
+    2100002: Rahmen
+    2100004: Mat
+    2100006: Blut
+    2100008: Boden
+    2100010: Teppich
+    2100012: AusweissHinten
+    2100014: No Name
+    2100016: AsuweisVorne
+    2100018: GlasFenster
+    2100020: Gehause
+    2100022: Schraenke
+    2100024: Weiss
+    2100026: Uhr
+    2100028: Thermometer
+    2100030: Medikament
+    2100032: "M\xFClleimer"
+    2100034: Kalender
+    2100036: SofaKissen
+    2100038: Sofa
+    2100040: Bettbezug
+    2100042: Matratze
+    2100044: DunklHolz
+    2100046: Schraenke.5
+    2100048: Schraenke.7
+    2100050: Schraenke.11
+    2100052: Glasbier
+    2100054: Boden.15
+    2100056: Rausfaser
+    2100058: Schraenke.13
     2300000: Anzeige
     2300002: Anzeige_2
     2300004: Anzeige_3
     2300006: Ausweiss
     2300008: Bett_2
     2300010: Bierfalsche
-    2300012: Capsule
-    2300014: Cylinder
-    2300016: Decke
-    2300018: Fenster
-    2300020: Fenster_1
-    2300022: Gehause
-    2300024: Gehause_2
-    2300026: Kalender
-    2300028: Kanuf
-    2300030: Kanuf_2
-    2300032: Kanuf_3
-    2300034: Kanuf_4
-    2300036: Kanuf_5
-    2300038: Kanuf_6
-    2300040: Kissen
-    2300042: Kissen_2
-    2300044: Kissen_3
-    2300046: Kissen_4
-    2300048: Kissen_5
-    2300050: KissenBett
-    2300052: Kneul
-    2300054: Lehne
-    2300056: Matratze
-    2300058: MedikamentDose
-    2300060: MEdikamentschachtel
-    2300062: "M\xFCll1"
-    2300064: "M\xFClleimer"
-    2300066: PlastikEimer
-    2300068: Pyramid
-    2300070: "R\xFCckenlehne"
-    2300072: "R\xFCckenlehne_2"
-    2300074: Schrank1
-    2300076: Schrank1_1
-    2300078: Schrank1_2
-    2300080: Schrank1_3
-    2300082: Schrank1_4
-    2300084: Schrank1_5
-    2300086: SofaBoden
-    2300088: Sofaboden
-    2300090: Teppich
-    2300092: Tisch_2
-    2300094: "T\xFCr"
-    2300096: Zigarette
-    2300098: Zimmer
+    2300012: Bilderramen
+    2300014: Capsule
+    2300016: Cone
+    2300018: Cylinder
+    2300020: Decke
+    2300022: Fenster
+    2300024: Fenster_1
+    2300026: Gehause
+    2300028: Gehause_2
+    2300030: Kalender
+    2300032: Kanuf
+    2300034: Kanuf_1
+    2300036: Kanuf_2
+    2300038: Kanuf_2_2
+    2300040: Kanuf_2_3
+    2300042: Kanuf_3
+    2300044: Kanuf_3_2
+    2300046: Kanuf_4
+    2300048: Kanuf_4_2
+    2300050: Kanuf_5
+    2300052: Kanuf_5_2
+    2300054: Kanuf_5_3
+    2300056: Kanuf_6
+    2300058: Kissen
+    2300060: Kissen_2
+    2300062: Kissen_3
+    2300064: Kissen_4
+    2300066: Kissen_5
+    2300068: KissenBett
+    2300070: Lehne
+    2300072: Matratze
+    2300074: MedikamentDose
+    2300076: MEdikamentschachtel
+    2300078: "M\xFCll1"
+    2300080: "M\xFClleimer"
+    2300082: Plane
+    2300084: PlastikEimer
+    2300086: Pyramid
+    2300088: "R\xFCckenlehne"
+    2300090: "R\xFCckenlehne_2"
+    2300092: Schrank1
+    2300094: Schrank1_1
+    2300096: Schrank1_2
+    2300098: Schrank1_3
+    2300100: Schrank1_4
+    2300102: Schrank1_5
+    2300104: SofaBoden
+    2300106: Sofaboden
+    2300108: Teppich
+    2300110: Tisch_2
+    2300112: "T\xFCr"
+    2300114: Zigarette
+    2300116: Zimmer
     3300000: Anzeige
     3300002: Anzeige_2
     3300004: Anzeige_3
     3300006: Ausweiss
     3300008: Bett_2
     3300010: Bierfalsche
-    3300012: Capsule
-    3300014: Cylinder
-    3300016: Decke
-    3300018: Fenster
-    3300020: Fenster_1
-    3300022: Gehause
-    3300024: Gehause_2
-    3300026: Kalender
-    3300028: Kanuf
-    3300030: Kanuf_2
-    3300032: Kanuf_3
-    3300034: Kanuf_4
-    3300036: Kanuf_5
-    3300038: Kanuf_6
-    3300040: Kissen
-    3300042: Kissen_2
-    3300044: Kissen_3
-    3300046: Kissen_4
-    3300048: Kissen_5
-    3300050: KissenBett
-    3300052: Kneul
-    3300054: Lehne
-    3300056: Matratze
-    3300058: MedikamentDose
-    3300060: MEdikamentschachtel
-    3300062: "M\xFCll1"
-    3300064: "M\xFClleimer"
-    3300066: PlastikEimer
-    3300068: Pyramid
-    3300070: "R\xFCckenlehne"
-    3300072: "R\xFCckenlehne_2"
-    3300074: Schrank1
-    3300076: Schrank1_1
-    3300078: Schrank1_2
-    3300080: Schrank1_3
-    3300082: Schrank1_4
-    3300084: Schrank1_5
-    3300086: SofaBoden
-    3300088: Sofaboden
-    3300090: Teppich
-    3300092: Tisch_2
-    3300094: "T\xFCr"
-    3300096: Zigarette
-    3300098: Zimmer
-    4300000: Teppich
-    4300002: Ausweiss
-    4300004: PlastikEimer
-    4300006: Capsule
-    4300008: Cylinder
-    4300010: Anzeige
-    4300012: Gehause
-    4300014: Anzeige_2
-    4300016: MEdikamentschachtel
-    4300018: Tisch_2
-    4300020: Pyramid
-    4300022: Gehause_2
-    4300024: Anzeige_3
-    4300026: MedikamentDose
-    4300028: Zigarette
-    4300030: Kalender
-    4300032: "M\xFCll1"
-    4300034: "M\xFClleimer"
-    4300036: Kissen
-    4300038: Kissen_2
-    4300040: Kneul
-    4300042: Kissen_3
-    4300044: Kissen_4
-    4300046: Kissen_5
-    4300048: Lehne
-    4300050: "R\xFCckenlehne"
-    4300052: "R\xFCckenlehne_2"
-    4300054: SofaBoden
-    4300056: Sofaboden
-    4300058: KissenBett
-    4300060: Decke
-    4300062: Bett_2
-    4300064: Matratze
-    4300066: Kanuf_6
-    4300068: Kanuf_5
-    4300070: Kanuf_4
-    4300072: Kanuf_3
-    4300074: Kanuf_2
-    4300076: Kanuf
-    4300078: Schrank1_4
-    4300080: Schrank1_5
-    4300082: Schrank1_3
-    4300084: Schrank1_2
-    4300086: Schrank1_1
-    4300088: Schrank1
-    4300090: Bierfalsche
-    4300092: Fenster_1
-    4300094: Fenster
-    4300096: "T\xFCr"
-    4300098: Zimmer
+    3300012: Bilderramen
+    3300014: Capsule
+    3300016: Cone
+    3300018: Cylinder
+    3300020: Decke
+    3300022: Fenster
+    3300024: Fenster_1
+    3300026: Gehause
+    3300028: Gehause_2
+    3300030: Kalender
+    3300032: Kanuf
+    3300034: Kanuf_1
+    3300036: Kanuf_2
+    3300038: Kanuf_2_2
+    3300040: Kanuf_2_3
+    3300042: Kanuf_3
+    3300044: Kanuf_3_2
+    3300046: Kanuf_4
+    3300048: Kanuf_4_2
+    3300050: Kanuf_5
+    3300052: Kanuf_5_2
+    3300054: Kanuf_5_3
+    3300056: Kanuf_6
+    3300058: Kissen
+    3300060: Kissen_2
+    3300062: Kissen_3
+    3300064: Kissen_4
+    3300066: Kissen_5
+    3300068: KissenBett
+    3300070: Lehne
+    3300072: Matratze
+    3300074: MedikamentDose
+    3300076: MEdikamentschachtel
+    3300078: "M\xFCll1"
+    3300080: "M\xFClleimer"
+    3300082: Plane
+    3300084: PlastikEimer
+    3300086: Pyramid
+    3300088: "R\xFCckenlehne"
+    3300090: "R\xFCckenlehne_2"
+    3300092: Schrank1
+    3300094: Schrank1_1
+    3300096: Schrank1_2
+    3300098: Schrank1_3
+    3300100: Schrank1_4
+    3300102: Schrank1_5
+    3300104: SofaBoden
+    3300106: Sofaboden
+    3300108: Teppich
+    3300110: Tisch_2
+    3300112: "T\xFCr"
+    3300114: Zigarette
+    3300116: Zimmer
+    4300000: Cone
+    4300002: Bilderramen
+    4300004: Plane
+    4300006: Kanuf_5
+    4300008: Teppich
+    4300010: Ausweiss
+    4300012: PlastikEimer
+    4300014: Capsule
+    4300016: Cylinder
+    4300018: Anzeige
+    4300020: Gehause
+    4300022: Anzeige_2
+    4300024: Tisch_2
+    4300026: Pyramid
+    4300028: Gehause_2
+    4300030: Anzeige_3
+    4300032: MEdikamentschachtel
+    4300034: MedikamentDose
+    4300036: Zigarette
+    4300038: Kalender
+    4300040: "M\xFCll1"
+    4300042: "M\xFClleimer"
+    4300044: Kissen
+    4300046: Kissen_2
+    4300048: Kissen_3
+    4300050: Kissen_4
+    4300052: Kissen_5
+    4300054: Lehne
+    4300056: "R\xFCckenlehne"
+    4300058: "R\xFCckenlehne_2"
+    4300060: SofaBoden
+    4300062: Sofaboden
+    4300064: KissenBett
+    4300066: Bett_2
+    4300068: Matratze
+    4300070: Kanuf_5_2
+    4300072: Kanuf_4
+    4300074: Kanuf_3
+    4300076: Kanuf_2
+    4300078: Kanuf_1
+    4300080: Kanuf
+    4300082: Kanuf_6
+    4300084: Kanuf_5_3
+    4300086: Kanuf_4_2
+    4300088: Kanuf_3_2
+    4300090: Kanuf_2_2
+    4300092: Kanuf_2_3
+    4300094: Schrank1_4
+    4300096: Schrank1_5
+    4300098: Schrank1_3
+    4300100: Schrank1_2
+    4300102: Schrank1_1
+    4300104: Schrank1
+    4300106: Bierfalsche
+    4300108: Zimmer
+    4300110: "T\xFCr"
+    4300112: Fenster_1
+    4300114: Fenster
+    4300116: Decke
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: AsuweisVorne
-    second: {fileID: 2100000, guid: 50cc17cb67f01384a8f3605a59a79a12, type: 2}
+    second: {fileID: 2100000, guid: 2fbf325426fdf3a4aa0c23c175f2bcd1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: AusweissHinten
-    second: {fileID: 2100000, guid: a0a94c1f3c00d4f449a4d538788a63f7, type: 2}
+    second: {fileID: 2100000, guid: 1c180d32ecc1b584cb3ed5f134b2a144, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Becher
+    second: {fileID: 2100000, guid: 32e00b72d9550d34d97575c0bef73d37, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bettbezug
-    second: {fileID: 2100000, guid: 41f65f05feb91324ebb723efef4d2dbd, type: 2}
+    second: {fileID: 2100000, guid: 1d7cb96bb0d43da48ba7465e7f7bd32e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blut
+    second: {fileID: 2100000, guid: ff21e288938f1e248b2926571f11735f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Boden
-    second: {fileID: 2100000, guid: 3d438e507ace9cd4e98f74e17bca99fb, type: 2}
+    second: {fileID: 2100000, guid: 114f7f00da4d29e4aa81c82a5be54954, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Boden.7
-    second: {fileID: 2100000, guid: cda85e0ac7ee24e4d8b64bbe8778a866, type: 2}
+      name: Boden.15
+    second: {fileID: 2100000, guid: 1b3422c05e2c1cf46ac3f925d0078b4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DunklHolz
+    second: {fileID: 2100000, guid: c1fd2578ebf906f4b8d7d7e0797579bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Gehause
-    second: {fileID: 2100000, guid: d6f367aff5721fd48aa4d2429d434799, type: 2}
+    second: {fileID: 2100000, guid: 5ebc704adeb498a4198c1558d6d54ccc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GlasFenster
-    second: {fileID: 2100000, guid: 8d765f324a7e4c34d86747af653fe36d, type: 2}
+    second: {fileID: 2100000, guid: 8a2bbeb63c9af40408d4dce52554c0e0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Glasbier
-    second: {fileID: 2100000, guid: a6899b0d81f7b6b429cc5db5c2250fc0, type: 2}
+    second: {fileID: 2100000, guid: 535176b9a9c44cd46bac31be3e2d04ce, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kalender
-    second: {fileID: 2100000, guid: 08b234c98a10c14408eff12b764a44a1, type: 2}
+    second: {fileID: 2100000, guid: 27ffb92a086739e48b992f7bd3a75089, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: 27bf8c8bb16605d43aa2368e580aa72b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Matratze
-    second: {fileID: 2100000, guid: df65609d12416cd41ba0daa71d0d581a, type: 2}
+    second: {fileID: 2100000, guid: fea606b8eb5e7a843a60f600d3ad990b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Medikament
-    second: {fileID: 2100000, guid: 5c242ebf8c6b5bb4b8970032360b83da, type: 2}
+    second: {fileID: 2100000, guid: 32c22473c19d4514e9f3618eef5d9dc6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "M\xFClleimer"
-    second: {fileID: 2100000, guid: 48034ae7b86df8f40a2606de250c6566, type: 2}
+    second: {fileID: 2100000, guid: e078dee7a4729b144a0286e1f28cdb74, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: b306c559c64f3974ea69a49e1df55166, type: 2}
+    second: {fileID: 2100000, guid: 9de8b530fe39d8948a0e38b2c57e1d94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rahmen
+    second: {fileID: 2100000, guid: af3003dac219799499d573270e1e6588, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Rausfaser
-    second: {fileID: 2100000, guid: 98ee1d290b96e9d43b619f20ea1f4eed, type: 2}
+    second: {fileID: 2100000, guid: 3ce555c2f5b614740b7d37900df4ff42, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Schraenke
-    second: {fileID: 2100000, guid: fb75461e6d501b44d83b76b8ce39fce2, type: 2}
+    second: {fileID: 2100000, guid: 631372f3d298ad14bab76e5e979bd1ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Schraenke.11
-    second: {fileID: 2100000, guid: af6b0bed021b5aa4fb8f70401fc3d332, type: 2}
+    second: {fileID: 2100000, guid: 25807b34577a83844a56c1eaa35f5146, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Schraenke.13
+    second: {fileID: 2100000, guid: e12e559874bf74d4bbcdca2c4a5ac035, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Schraenke.5
+    second: {fileID: 2100000, guid: 82b85a82f8d19ba45a22795d8751ffd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Schraenke.7
+    second: {fileID: 2100000, guid: 8b26caf31367b5a43b38eb89576b16ea, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sofa
-    second: {fileID: 2100000, guid: 30a74abea9cd00a47a9d6a52d5e55422, type: 2}
+    second: {fileID: 2100000, guid: f516e50778059a2448049573ffda292c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SofaKissen
-    second: {fileID: 2100000, guid: 4bd4d2dd5aa7d8749b9808f7ad411adf, type: 2}
+    second: {fileID: 2100000, guid: 2aaab0c5b81e57349a2ea5546040c1a9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Teppich
-    second: {fileID: 2100000, guid: de23164d91d151142baad1e98a4f9ae5, type: 2}
+    second: {fileID: 2100000, guid: 488a37514ed3ad94fa2022e6e11380e8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Thermometer
-    second: {fileID: 2100000, guid: 121db9dcb70205b4093928eda1988b8c, type: 2}
+    second: {fileID: 2100000, guid: 54a4eca66659c54419f646a23c856bba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Uhr
-    second: {fileID: 2100000, guid: d6aa1257cd3bc5b42ad7bcd05292d42c, type: 2}
+    second: {fileID: 2100000, guid: 55734a5322960b24fa16b1fc308466a8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Weiss
-    second: {fileID: 2100000, guid: c8a7384b2b9cea0459d10c6b486c73dc, type: 2}
+    second: {fileID: 2100000, guid: 8190d844e1ab6964992b478ad0b5739d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1101010899
+    second: {fileID: 2800000, guid: 2fc978c70ead9e24d9d827f211b8eda9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 355-ziffernblatt-schmalstrich-s-innenuhr-moderna
-    second: {fileID: 2800000, guid: c7b53706bea8a9547b0c8e302935296c, type: 3}
+    second: {fileID: 2800000, guid: 4c5903785d0ef2846bf44cee98c506eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Blut
+    second: {fileID: 2800000, guid: f701b0d4c1eff894ca1e60bd4177a788, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Blut1
-    second: {fileID: 2800000, guid: 717f8463f00cbaf428f023600bf5f684, type: 3}
+    second: {fileID: 2800000, guid: e2b82ec072a48b1498d940349462e226, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Falithrom
-    second: {fileID: 2800000, guid: 014a37d7f8603dd42a66d3e3bbdc888d, type: 3}
+    second: {fileID: 2800000, guid: 9eed60be194c0a2469c5c02576a6aaea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Familie2
+    second: {fileID: 2800000, guid: 66b2f21fb805fc641ac69db467dd4dad, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Hansa-Pils-v2
-    second: {fileID: 2800000, guid: d776e48b417d29d40aaff1ead7578a63, type: 3}
+    second: {fileID: 2800000, guid: 66e89513d11f0cc4085b6d63764f5bb6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HolzDunkel
+    second: {fileID: 2800000, guid: 82dac57d7ba8ecb40860943ebdfe4fec, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Laminat_Mit_Blut
-    second: {fileID: 2800000, guid: a572a121facbb364cac0ba8f72ab6f22, type: 3}
+    second: {fileID: 2800000, guid: d71efc1b042fcbd49b27600002c8180a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Mustermann_nPA
-    second: {fileID: 2800000, guid: 59d8cdd7d6087f14081ffd28a9a4474c, type: 3}
+    second: {fileID: 2800000, guid: 0d43bff136fc9544490ade4074319dfd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Parkett_05_Eiche_Elegance
+    second: {fileID: 2800000, guid: 747a581f8748b124f820bbf28241e6b1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Vintage-teppich-blau-blume
-    second: {fileID: 2800000, guid: 3c2080adde9993244aef41d34a00e7ac, type: 3}
+    second: {fileID: 2800000, guid: 888659ea52b4e2049adc5c96133f051b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ca5767ca393164559dc98b10c6176859
-    second: {fileID: 2800000, guid: aa3ea5a94accb494dbc1891d8984eb12, type: 3}
+    second: {fileID: 2800000, guid: 7139f8044a794544f8f9fedfc4ddf456, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: f-1228-c0782
-    second: {fileID: 2800000, guid: 2e78431974c4ec046ab834a8fff1e50e, type: 3}
+    second: {fileID: 2800000, guid: 3ca55ac8d8a33044d8203eaa6a0cb0c1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: fensterthermometer-rund-zum-ankleben_1
-    second: {fileID: 2800000, guid: 2c62c167a320678408b9e905a94c65a1, type: 3}
+    second: {fileID: 2800000, guid: e7e87af15cdf71d4bb0dcd794aa702b7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: mtex_12518
-    second: {fileID: 2800000, guid: 41a6c422156e01941b1c347033c18c7b, type: 3}
+    second: {fileID: 2800000, guid: aa62d58a7ecb95248bfe71b8366c322a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: neuer_perso_2010_rueckseite
-    second: {fileID: 2800000, guid: 11e424dadac40114b86db2922f6d1e2b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: oak-wood-texture-natural-pattern-extremely-high-resolution-photo-96914891
-    second: {fileID: 2800000, guid: 6866e2777873edd4dbebd85d27500b7a, type: 3}
+    second: {fileID: 2800000, guid: f5331183c75b66e4c8f7c01610b8adb2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: rauhfa01
-    second: {fileID: 2800000, guid: 9b2bd4fd6f0a1de40b151e1c40d8dfd4, type: 3}
+    second: {fileID: 2800000, guid: 15b4db6d999b53b478eff3cde2a97601, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
