@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33981609085007610}
   - component: {fileID: 23309516841894328}
   - component: {fileID: 54334436570124690}
+  - component: {fileID: 65784098450780150}
   m_Layer: 0
   m_Name: Kissen
   m_TagString: Untagged
@@ -99,3 +100,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65784098450780150
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270166536819072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48830026, y: 0.19310175, z: 0.499264}
+  m_Center: {x: -0.0011015908, y: 0.000054165735, z: 0.0003439486}
