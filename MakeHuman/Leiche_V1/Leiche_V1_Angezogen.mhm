@@ -1,0 +1,35 @@
+# Written by MakeHuman 1.1.1
+version v1.1.1
+tags Leiche_V1_Angezogen
+camera 354.5 359.0 0.0616981552449 0.566585767728 0.00474873304081 1.175
+modifier macrodetails-universal/Muscle 0.238000
+modifier macrodetails/African 0.000000
+modifier macrodetails-proportions/BodyProportions 0.238000
+modifier macrodetails/Gender 0.816000
+modifier macrodetails-height/Height 0.599000
+modifier breast/BreastSize 0.500000
+modifier genitals/penis-circ-decr|incr -0.062000
+modifier macrodetails/Age 0.816000
+modifier genitals/penis-testicles-decr|incr -0.034000
+modifier breast/BreastFirmness 0.500000
+modifier macrodetails/Asian 0.000000
+modifier genitals/penis-length-decr|incr -0.020000
+modifier head/head-age-decr|incr 0.088000
+modifier macrodetails/Caucasian 1.000000
+modifier macrodetails-universal/Weight 0.653000
+tongue tongue01 52ad91a3-caad-4e50-8c38-67634e5e789c
+teeth Teeth_Shape04 6bfa48b9-fbb2-4e67-ba6e-6ab49863a1d4
+proxy adult-male-genitalia ece8ae91-d8d7-4e98-a737-dd1f5f08519a
+hair short01 766436e9-63ed-4f6a-afa9-99f3acff70a8
+eyelashes Eyelashes01 d533836f-13ad-4836-8b65-051108253cd2
+skeleton default_no_toes.mhskel
+eyebrows eyebrow009 55b3b52a-379e-426d-b320-562ed57202b3
+eyes HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6
+clothes shoes05 8ef14ff4-8547-419c-a495-17bab919568b
+clothes male_casualsuit01 79ced554-1d8a-4c14-a6a8-e1de90b09c32
+clothesHideFaces True
+expression sleep01.mhpose
+skinMaterial skins/old_caucasian_male/old_caucasian_male.mhmat
+material short01 766436e9-63ed-4f6a-afa9-99f3acff70a8 short01.mhmat
+material HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6 eyes/materials/brown.mhmat
+subdivide False
