@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33687344476631888}
   - component: {fileID: 23488044206603114}
   - component: {fileID: 54840553754378810}
-  - component: {fileID: 64891367725865728}
+  - component: {fileID: 65319480264787454}
   m_Layer: 0
   m_Name: Medikamentschachtel
   m_TagString: Untagged
@@ -101,8 +101,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64891367725865728
-MeshCollider:
+--- !u!65 &65319480264787454
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -110,8 +110,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300032, guid: d6a4841e161f1b246a7f10f0f36c9016, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.20242007, y: 0.06979131, z: 0.08159999}
+  m_Center: {x: 0.025410043, y: -0.009095658, z: 0}

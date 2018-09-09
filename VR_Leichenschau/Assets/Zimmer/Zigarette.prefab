@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4672649578174436}
   - component: {fileID: 33131965941517406}
   - component: {fileID: 23979518628348212}
+  - component: {fileID: 136866503932594594}
   m_Layer: 0
   m_Name: Zigarette
   m_TagString: Untagged
@@ -85,3 +86,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030829434352504}
   m_Mesh: {fileID: 4300036, guid: d6a4841e161f1b246a7f10f0f36c9016, type: 3}
+--- !u!136 &136866503932594594
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030829434352504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.004
+  m_Height: 0.08499999
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

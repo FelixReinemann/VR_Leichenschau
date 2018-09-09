@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4872507853995134}
   - component: {fileID: 54858276885233478}
-  - component: {fileID: 64801868271871862}
+  - component: {fileID: 65748182866579132}
   m_Layer: 0
   m_Name: Buch
   m_TagString: Untagged
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1855283708415862}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.1642e-10, y: -0.0010126, z: 6.0354e-11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4872507853995134}
@@ -92,15 +92,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079999650258860}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.70710677, y: -0.000000059604638, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.0033634994, y: 0.62272465, z: -0.4109664}
+  m_LocalScale: {x: 0.5652908, y: 0.5652908, z: 0.5652913}
   m_Children:
   - {fileID: 4811402756330002}
   - {fileID: 4659377396431828}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90.00001}
 --- !u!23 &23065171909866238
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -116,8 +116,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 44b9ac827f21047418c385b4c815e6be, type: 3}
-  - {fileID: 2100002, guid: 44b9ac827f21047418c385b4c815e6be, type: 3}
+  - {fileID: 2100000, guid: cf75fa8804281f84b8572b7dacee7a87, type: 2}
+  - {fileID: 2100000, guid: 4559500736c475c4dbf055af6a136a05, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,8 +159,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64801868271871862
-MeshCollider:
+--- !u!65 &65748182866579132
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -168,8 +168,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 44b9ac827f21047418c385b4c815e6be, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: -0.04, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4661332510869874}
   - component: {fileID: 33791560931336266}
   - component: {fileID: 23954459290736364}
-  - component: {fileID: 64702927119547952}
   - component: {fileID: 54637626099772010}
+  - component: {fileID: 136524638688042726}
   m_Layer: 0
   m_Name: "M\xFCll"
   m_TagString: Untagged
@@ -100,8 +100,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64702927119547952
-MeshCollider:
+--- !u!136 &136524638688042726
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -109,8 +109,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300040, guid: d6a4841e161f1b246a7f10f0f36c9016, type: 3}
+  m_Radius: 0.052726384
+  m_Height: 0.09690881
+  m_Direction: 1
+  m_Center: {x: 0.0019088946, y: -0.004561713, z: -0.0036894344}
