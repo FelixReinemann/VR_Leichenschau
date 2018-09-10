@@ -33,7 +33,7 @@ public class MarkableObject : MonoBehaviour {
 		GameObject newMarker = Instantiate(ManagesScene.singleton.markerPrefab,spawnPos, spawnRot);
 		ManagesScene.singleton.markerCount++;
 		newMarker.GetComponentInChildren<UnityEngine.UI.Text>().text = ManagesScene.singleton.markerCount.ToString();
-		marked=true;
+		//marked=true;
 	}
 
 void FixedUpdate(){

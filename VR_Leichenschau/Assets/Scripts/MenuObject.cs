@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuObject : MonoBehaviour {
+public class MenuObject : MarkableObject {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,10 @@ public class MenuObject : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public GameObject myMenu;
+	public override void Mark(){
+		Debug.Log("Menu Appears");
+	}
+
 }
