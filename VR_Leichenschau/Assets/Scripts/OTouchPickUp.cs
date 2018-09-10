@@ -23,6 +23,8 @@ public class OTouchPickUp : MonoBehaviour {
 	OVRInput.Axis1D handTrigger;
 	Rigidbody myRigid;
 	GameObject grabbedObject;
+	//public Transform lTouchController, rTouchController;
+
 	// Update is called once per frame
 
 	RaycastHit hit;
@@ -34,11 +36,16 @@ public class OTouchPickUp : MonoBehaviour {
 			//Debug.Log(OVRInput.Get( OVRInput.Axis1D.PrimaryHandTrigger) +" ; "+OVRInput.Get( OVRInput.Axis1D.SecondaryHandTrigger));
 			if(grabbedObject == null){
 				Collider[] colObjects = Physics.OverlapSphere(transform.position,col.radius,mask);
-				//Debug.Log("Amount: "+colObjects.Length);
-				for (int i = 0; i < colObjects.Length; i++){
-					colObjects[i].attachedRigidbody.GetComponent<GrabableObject>().OnGrab(myRigid);
-					grabbedObject = colObjects[i].attachedRigidbody.gameObject;
-					break;
+                //Debug.Log("Amount: "+colObjects.Length);
+                GrabableObject script;
+                for (int i = 0; i < colObjects.Length; i++){
+					script = colObjects[i].attachedRigidbody.GetComponent<GrabableObject>();
+                    if (script.fixedJoint == null)
+                    {
+                        script.OnGrab(myRigid);
+                        grabbedObject = colObjects[i].attachedRigidbody.gameObject;
+                        break;
+                    }
 				}
 			}
 		} else {
@@ -48,23 +55,48 @@ public class OTouchPickUp : MonoBehaviour {
 				grabbedObject = null;
 			}
 		}
-		/*
-		if(OVRInput.GetDown(OVRInput.RawButton.A)){
-			Debug.Log("Button 1 pressed");
-		}
-        if (OVRInput.GetDown(OVRInput.RawButton.B))
+
+        if (hand == Hands.RightHand)
         {
-            Debug.Log("Button 2 pressed");
+            if (OVRInput.GetDown(OVRInput.RawButton.A))
+            {
+                Debug.Log("Button 1 pressed");
+				CastRayForMarkable();
+            }
+            if (OVRInput.GetDown(OVRInput.RawButton.B))
+            {
+                Debug.Log("Button 2 pressed");
+                CastRayForMarkable();
+            }
         }
-        if (OVRInput.GetDown(OVRInput.RawButton.X))
+        else
         {
-            Debug.Log("Button 3 pressed");
+            if (OVRInput.GetDown(OVRInput.RawButton.X))
+            {
+                Debug.Log("Button 3 pressed");
+                CastRayForMarkable();
+            }
+            if (OVRInput.GetDown(OVRInput.RawButton.Y))
+            {
+                Debug.Log("Button 4 pressed");
+                CastRayForMarkable();
+            }
         }
-        if (OVRInput.GetDown(OVRInput.RawButton.Y))
-        {
-            Debug.Log("Button 4 pressed");
-        }*/
 	}
+
+	float castRadius = 0.2f;
+    public void CastRayForMarkable()
+    {
+		if(Physics.SphereCast(transform.position,castRadius,transform.forward, out hit, 10, mask)){
+			MarkableObject script;
+			script = hit.collider.attachedRigidbody.GetComponent<MarkableObject>();
+			if(script!=null){
+				script.Mark();
+			}
+		}
+    }
 }
+
+
 
 public enum Hands {LeftHand, RightHand}

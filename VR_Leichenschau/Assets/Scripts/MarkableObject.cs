@@ -34,11 +34,12 @@ public class MarkableObject : MonoBehaviour {
 	}
 
 void FixedUpdate(){
+	/*
 	OVRInput.Update();
 	if(OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.Three) ){
 		Debug.Log("marked");
 		Mark();
-	}
+	}*/
 }
 
 }

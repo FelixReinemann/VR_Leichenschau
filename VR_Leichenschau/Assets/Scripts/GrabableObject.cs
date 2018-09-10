@@ -26,6 +26,9 @@ public class GrabableObject : MonoBehaviour {
 
 	public void OnGrab(Rigidbody hand){
 		Debug.Log("grab got called");
+		if(fixedJoint!=null){
+			return;
+		}
 		connectedTo = hand;
 		fixedJoint = gameObject.AddComponent<FixedJoint>();
 		fixedJoint.connectedBody = hand;
