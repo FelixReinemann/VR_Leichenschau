@@ -27,14 +27,14 @@ public class OTouchPickUp : MonoBehaviour {
 
 	RaycastHit hit;
 	int mask;
-	void Update () {
+	void FixedUpdate () {
 		OVRInput.Update();
 		if(OVRInput.Get( handTrigger) > 0 ){
 			grabbing = true;
 			//Debug.Log(OVRInput.Get( OVRInput.Axis1D.PrimaryHandTrigger) +" ; "+OVRInput.Get( OVRInput.Axis1D.SecondaryHandTrigger));
 			if(grabbedObject == null){
 				Collider[] colObjects = Physics.OverlapSphere(transform.position,col.radius,mask);
-				Debug.Log("Amount: "+colObjects.Length);
+				//Debug.Log("Amount: "+colObjects.Length);
 				for (int i = 0; i < colObjects.Length; i++){
 					colObjects[i].attachedRigidbody.GetComponent<GrabableObject>().OnGrab(myRigid);
 					grabbedObject = colObjects[i].attachedRigidbody.gameObject;
@@ -48,6 +48,22 @@ public class OTouchPickUp : MonoBehaviour {
 				grabbedObject = null;
 			}
 		}
+		/*
+		if(OVRInput.GetDown(OVRInput.RawButton.A)){
+			Debug.Log("Button 1 pressed");
+		}
+        if (OVRInput.GetDown(OVRInput.RawButton.B))
+        {
+            Debug.Log("Button 2 pressed");
+        }
+        if (OVRInput.GetDown(OVRInput.RawButton.X))
+        {
+            Debug.Log("Button 3 pressed");
+        }
+        if (OVRInput.GetDown(OVRInput.RawButton.Y))
+        {
+            Debug.Log("Button 4 pressed");
+        }*/
 	}
 }
 
