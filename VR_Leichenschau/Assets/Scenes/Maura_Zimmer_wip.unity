@@ -15699,6 +15699,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1422090073112442, guid: 9ae31119db204264c96293567dc2426d,
     type: 2}
   m_PrefabInternal: {fileID: 1354368141}
+--- !u!4 &1112413499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4243904611552156, guid: 9ae31119db204264c96293567dc2426d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1354368141}
 --- !u!114 &1112413500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15727,9 +15732,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  rotationSpeed: 1
+  rotationSpeed: 20
   moveStick: {x: 0, y: 0}
+  rotateStick: {x: 0, y: 0}
   head: {fileID: 1797305972}
+  toRotate: {fileID: 1112413499}
 --- !u!1 &1116965969
 GameObject:
   m_ObjectHideFlags: 0
