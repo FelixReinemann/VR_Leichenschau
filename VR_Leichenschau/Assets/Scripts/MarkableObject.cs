@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MarkableObject : MonoBehaviour {
 
-
+	public bool marked=false;
 	float radius = 0.4f;
 	float markerSize = 0.1f;
 	RaycastHit hit;
@@ -29,8 +29,11 @@ public class MarkableObject : MonoBehaviour {
 			}
 		}
 		Vector3 playerPos = ManagesScene.singleton.player.position;
-		Quaternion spawnRot = Quaternion.LookRotation(playerPos - spawnPos, Vector3.up);
-		Instantiate(ManagesScene.singleton.markerPrefab,spawnPos, spawnRot);
+		Quaternion spawnRot = Quaternion.LookRotation(spawnPos - playerPos, Vector3.up);
+		GameObject newMarker = Instantiate(ManagesScene.singleton.markerPrefab,spawnPos, spawnRot);
+		ManagesScene.singleton.markerCount++;
+		newMarker.GetComponentInChildren<UnityEngine.UI.Text>().text = ManagesScene.singleton.markerCount.ToString();
+		marked=true;
 	}
 
 void FixedUpdate(){

@@ -14,5 +14,5 @@ public class ManagesScene : MonoBehaviour {
 
 public GameObject markerPrefab;
 public Transform player;
-
+public int markerCount=0;
 }
