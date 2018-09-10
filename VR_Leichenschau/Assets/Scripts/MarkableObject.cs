@@ -13,7 +13,7 @@ public class MarkableObject : MonoBehaviour {
 		myMask= 1 << LayerMask.NameToLayer("Interactable");
 		markerSize = ManagesScene.singleton.markerPrefab.GetComponentInChildren<BoxCollider>().size.x;
 	}
-	public void Mark(){
+	public virtual void Mark(){
 		Vector3 spawnPos = transform.position + new Vector3(Random.Range(-radius,radius),1*0.5f,Random.Range(-radius,radius));
 		int repeats = 0;
 		while(true){

@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.15
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 9aa77e4939571b9438cf7a6e36420f8d, type: 2}
@@ -34,7 +34,7 @@ RenderSettings:
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_ReflectionBounces: 3
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
@@ -44,27 +44,28 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
-    m_AtlasSize: 1024
-    m_AO: 0
+    m_AtlasSize: 2048
+    m_AO: 1
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
     m_Padding: 2
-    m_LightmapParameters: {fileID: 0}
+    m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000,
+      type: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
     m_FinalGather: 0
@@ -72,7 +73,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
-    m_BakeBackend: 1
+    m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
@@ -89,7 +90,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000360, guid: 834b3d3f5f8f2f24fb05011d62855469,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -328,6 +330,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -373,6 +379,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -506,6 +516,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -593,6 +607,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -866,6 +884,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -1111,6 +1133,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652913
       objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -1198,6 +1232,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.5652913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -1652,6 +1698,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -2103,6 +2153,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -2226,6 +2280,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -2337,6 +2395,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -2498,6 +2560,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.5652913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -3170,6 +3244,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -3554,6 +3640,10 @@ Prefab:
       propertyPath: m_Name
       value: Becher (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
   m_IsPrefabAsset: 0
@@ -3757,6 +3847,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1392289656818594, guid: 9b685561634f0a549a4a98c51d7cf55a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 64744278375941880, guid: 9b685561634f0a549a4a98c51d7cf55a, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 9b685561634f0a549a4a98c51d7cf55a, type: 2}
@@ -3835,6 +3929,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -3880,6 +3978,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -3935,6 +4037,10 @@ Prefab:
     - target: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
@@ -4022,6 +4128,10 @@ Prefab:
     - target: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
@@ -4235,6 +4345,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -4542,6 +4656,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.4692
       objectReference: {fileID: 0}
+    - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
   m_IsPrefabAsset: 0
@@ -4801,6 +4919,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -5197,6 +5319,18 @@ Prefab:
       propertyPath: m_Name
       value: Buch (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -5419,6 +5553,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -5722,6 +5860,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -5841,6 +5983,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -5966,6 +6112,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652913
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -6042,6 +6200,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -6325,6 +6487,10 @@ Prefab:
     - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
       propertyPath: m_Name
       value: "M\xFCll (3)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
@@ -6754,6 +6920,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652906
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -6984,6 +7162,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -7166,6 +7348,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -7475,7 +7661,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -7771,6 +7957,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
   m_IsPrefabAsset: 0
@@ -7816,6 +8006,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -7951,6 +8145,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -8148,6 +8346,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -8223,6 +8425,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -8387,6 +8593,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.5652913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -8618,6 +8836,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -8739,6 +8961,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -9166,6 +9392,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652913
       objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -9561,6 +9799,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -9805,6 +10047,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -9993,6 +10239,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -10117,6 +10367,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -10282,6 +10536,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.56529087
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -10337,6 +10603,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -10655,74 +10925,6 @@ Transform:
   m_Father: {fileID: 2008658322}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &701842643 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1623586697146356, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!4 &701842644 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4685877666661180, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!114 &701842646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 701842643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 701842644}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  stopNaNPropagation: 1
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &702407944
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,6 +11000,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -10848,6 +11054,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -10988,6 +11198,10 @@ Prefab:
       propertyPath: m_Name
       value: Becher (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
   m_IsPrefabAsset: 0
@@ -11107,6 +11321,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -11209,6 +11427,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 30.395002
       objectReference: {fileID: 0}
+    - target: {fileID: 1701151239683846, guid: 5e11ef1de27056d409073809c31727e1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e11ef1de27056d409073809c31727e1, type: 2}
   m_IsPrefabAsset: 0
@@ -11266,6 +11488,10 @@ Prefab:
     - target: {fileID: 1270166536819072, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
       propertyPath: m_Name
       value: Kissen (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270166536819072, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
@@ -11600,6 +11826,10 @@ Prefab:
       propertyPath: m_Name
       value: Becher (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
   m_IsPrefabAsset: 0
@@ -11676,6 +11906,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -11799,6 +12033,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -12095,6 +12333,10 @@ Prefab:
     - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
       propertyPath: m_Name
       value: Becher (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
@@ -12507,6 +12749,10 @@ Prefab:
       propertyPath: m_Name
       value: Becher (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
   m_IsPrefabAsset: 0
@@ -12764,6 +13010,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -12843,6 +13093,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -12888,6 +13142,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -13601,6 +13859,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -13731,6 +13993,10 @@ Prefab:
     - target: {fileID: 4988446471871508, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -83.505005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
@@ -14041,6 +14307,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -14297,6 +14567,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -14359,6 +14633,10 @@ Prefab:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1083867373004388, guid: 030733bdcded9674183d555ab4f1ff75, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 64837276073726678, guid: 030733bdcded9674183d555ab4f1ff75, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 030733bdcded9674183d555ab4f1ff75, type: 2}
@@ -14405,6 +14683,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -14698,6 +14980,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -14773,6 +15059,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -14851,6 +15141,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -14896,6 +15190,10 @@ Prefab:
     - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
       propertyPath: m_Name
       value: "M\xFCll (5)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
@@ -15317,6 +15615,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -15471,6 +15773,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -15954,6 +16260,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -15999,6 +16309,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -16148,6 +16462,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
   m_IsPrefabAsset: 0
@@ -16288,49 +16606,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4074941742552120, guid: fbae35b5b4bf2f641afb7530686e819d,
     type: 2}
   m_PrefabInternal: {fileID: 2004519992}
---- !u!1 &1112413498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1422090073112442, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!4 &1112413499 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4243904611552156, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!114 &1112413500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1112413498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 8ab98a6097f2f5840ba42e09ce27d9b0, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
---- !u!114 &1112413501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1112413498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12d70ea0ba2a00248a9145b9b42a6edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  rotationSpeed: 60
-  moveStick: {x: 0, y: 0}
-  rotateStick: {x: 0, y: 0}
-  head: {fileID: 1797305972}
-  toRotate: {fileID: 1112413499}
 --- !u!1 &1116965969
 GameObject:
   m_ObjectHideFlags: 0
@@ -16623,6 +16898,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652914
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -16669,6 +16956,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -16714,6 +17005,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -17053,6 +17348,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -17386,6 +17685,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -17601,6 +17904,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -17822,6 +18129,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -17867,6 +18178,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -17979,6 +18294,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -18034,6 +18353,10 @@ Prefab:
     - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
       propertyPath: m_Name
       value: Becher (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
@@ -18388,6 +18711,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -19015,6 +19342,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -19314,6 +19645,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
   m_IsPrefabAsset: 0
@@ -19498,33 +19833,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 4243904611552156, guid: 9ae31119db204264c96293567dc2426d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4243904611552156, guid: 9ae31119db204264c96293567dc2426d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1422090073112442, guid: 9ae31119db204264c96293567dc2426d, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 20047311112364848, guid: 9ae31119db204264c96293567dc2426d,
-        type: 2}
-      propertyPath: m_ForceIntoRT
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20211986679527768, guid: 9ae31119db204264c96293567dc2426d,
-        type: 2}
-      propertyPath: m_ForceIntoRT
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20463318292399414, guid: 9ae31119db204264c96293567dc2426d,
-        type: 2}
-      propertyPath: m_ForceIntoRT
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae31119db204264c96293567dc2426d, type: 2}
   m_IsPrefabAsset: 0
@@ -19662,6 +19970,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.56529087
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -19835,6 +20155,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -19885,6 +20209,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -20036,6 +20364,10 @@ Prefab:
     - target: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
@@ -20356,6 +20688,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -20631,6 +20967,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -20718,6 +21066,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.5652913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -20850,6 +21210,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1270166536819072, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
   m_IsPrefabAsset: 0
@@ -20972,6 +21336,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -21053,6 +21421,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -21553,6 +21925,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -21664,6 +22040,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -21747,6 +22127,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -22056,6 +22440,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652913
       objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -22097,6 +22493,10 @@ Prefab:
     - target: {fileID: 4126817863967328, guid: 5d5ec18fd6ed4834e9a406fd20b5e654, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731677962777484, guid: 5d5ec18fd6ed4834e9a406fd20b5e654, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d5ec18fd6ed4834e9a406fd20b5e654, type: 2}
@@ -22877,6 +23277,10 @@ Prefab:
       propertyPath: m_Name
       value: Kissen (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1270166536819072, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
   m_IsPrefabAsset: 0
@@ -23038,6 +23442,10 @@ Prefab:
     - target: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
@@ -23254,6 +23662,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652913
       objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -23299,6 +23719,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -23535,6 +23959,14 @@ Prefab:
     - target: {fileID: 4056148840493848, guid: 47905a0a47d951a42a0aa71980f9d6b7, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458260338867032, guid: 47905a0a47d951a42a0aa71980f9d6b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458260338867032, guid: 47905a0a47d951a42a0aa71980f9d6b7, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47905a0a47d951a42a0aa71980f9d6b7, type: 2}
@@ -23777,6 +24209,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4313456101454842, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270166536819072, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24122,6 +24558,10 @@ Prefab:
     - target: {fileID: 4722413732790130, guid: 5e11ef1de27056d409073809c31727e1, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.7000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701151239683846, guid: 5e11ef1de27056d409073809c31727e1, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e11ef1de27056d409073809c31727e1, type: 2}
@@ -24808,6 +25248,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.57114
       objectReference: {fileID: 0}
+    - target: {fileID: 1270166536819072, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8754a466c5287e4c8217350e942af0b, type: 2}
   m_IsPrefabAsset: 0
@@ -24940,74 +25384,6 @@ Transform:
   m_Father: {fileID: 332603525}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1797305971 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1684644298694232, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!4 &1797305972 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4153244059807760, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!114 &1797305975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1797305971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1797305972}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  stopNaNPropagation: 1
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &1808095309
 GameObject:
   m_ObjectHideFlags: 0
@@ -25529,6 +25905,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -25610,6 +25990,10 @@ Prefab:
       propertyPath: m_Name
       value: "M\xFCll (4)"
       objectReference: {fileID: 0}
+    - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
   m_IsPrefabAsset: 0
@@ -25663,6 +26047,10 @@ Prefab:
     - target: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
@@ -25741,77 +26129,31 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1890376153 stripped
+--- !u!1 &1886669984 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1310740333729068, guid: 9ae31119db204264c96293567dc2426d,
+  m_CorrespondingSourceObject: {fileID: 1458260338867032, guid: 47905a0a47d951a42a0aa71980f9d6b7,
     type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!4 &1890376154 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4214727538608166, guid: 9ae31119db204264c96293567dc2426d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354368141}
---- !u!114 &1890376156
+  m_PrefabInternal: {fileID: 1656155268}
+--- !u!114 &1886669989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1890376153}
+  m_GameObject: {fileID: 1886669984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1890376154}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  stopNaNPropagation: 1
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
+  fixedJoint: {fileID: 0}
+  connectedTo: {fileID: 0}
 --- !u!1 &1895351965
 GameObject:
   m_ObjectHideFlags: 0
@@ -26138,6 +26480,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
   m_IsPrefabAsset: 0
@@ -26435,6 +26781,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -26705,6 +27055,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -26750,6 +27104,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -26828,6 +27186,10 @@ Prefab:
       propertyPath: m_Name
       value: "M\xFCll (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 1490690529744828, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446c348d351e71f438e5c9f2ea79a1d6, type: 2}
   m_IsPrefabAsset: 0
@@ -26905,6 +27267,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -26950,6 +27316,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -27293,6 +27663,10 @@ Prefab:
       propertyPath: m_Name
       value: Bierflasche (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
@@ -27627,6 +28001,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652909
       objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -27698,6 +28084,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -27885,6 +28283,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5652913
       objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -27930,6 +28340,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -28012,6 +28426,10 @@ Prefab:
     - target: {fileID: 1731677962777484, guid: 5d5ec18fd6ed4834e9a406fd20b5e654, type: 2}
       propertyPath: m_Name
       value: Dose (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731677962777484, guid: 5d5ec18fd6ed4834e9a406fd20b5e654, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d5ec18fd6ed4834e9a406fd20b5e654, type: 2}
@@ -28145,6 +28563,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
@@ -28436,6 +28866,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
   m_IsPrefabAsset: 0
@@ -28490,6 +28924,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030829434352504, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e, type: 2}
   m_IsPrefabAsset: 0
@@ -28535,6 +28973,10 @@ Prefab:
     - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
       propertyPath: m_Name
       value: Bierflasche (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
@@ -28789,6 +29231,18 @@ Prefab:
       propertyPath: m_Name
       value: Buch (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
   m_IsPrefabAsset: 0
@@ -28834,6 +29288,10 @@ Prefab:
     - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
       propertyPath: m_Name
       value: Becher (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127134618118980, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00a6f4f7a78edf41933150b2f096f9f, type: 2}
@@ -28922,6 +29380,18 @@ Prefab:
     - target: {fileID: 4872507853995134, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.5652913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090541589201084, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855283708415862, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079999650258860, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d501fad631ed3b4fae8705daf3e2be5, type: 2}

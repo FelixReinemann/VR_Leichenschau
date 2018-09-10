@@ -29,7 +29,7 @@ public class VRMove : MonoBehaviour
         //---------movement---------------//
         //myRotation = Quaternion.LookRotation(new Vector3(head.forward.x, 0, head.forward.z).normalized, Vector3.up);
         //moveVector = myRotation * (transform.forward * moveStick.y + transform.right * moveStick.x);
-        moveVector = (transform.forward * moveStick.y + transform.right * moveStick.x);
+        moveVector = (head.forward * moveStick.y + head.right * moveStick.x);
         moveVector = new Vector3(moveVector.x,0,moveVector.z);
 
 
