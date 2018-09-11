@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OTouchPickUp : MonoBehaviour
 {
@@ -78,51 +79,47 @@ public class OTouchPickUp : MonoBehaviour
             CastRayForMarkable();
         }*/
 
-        if(myBeam.activeSelf && myButton[0].state == ButtonStates.Pressed){
+        if(myBeam.activeSelf && myButton[0].state == ButtonStates.Pressed && hitButton == null){
             CreateMark();
+            CastRayForMarkable();
         }
 
         if (myButton[1].state == ButtonStates.Pressed)
         {
-            Debug.Log("Button 1 pressed on " + gameObject.name + " pressed");
+            //Debug.Log("Button 1 pressed on " + gameObject.name + " pressed");
             myBeam.SetActive(true);
         } else if (myButton[1].state == ButtonStates.LetGo){
             myBeam.SetActive(false);
         }
 
-        /*
-        if (hand == Hands.LeftHand)
-        {
-            if (OVRInput.GetDown(OVRInput.RawButton.X))
-            {
-                Debug.Log("Button X pressed");
-                CastRayForMarkable();
+        if(myBeam.activeSelf){
+            CastRayForMenu();
+            if(myButton[0].state == ButtonStates.Pressed && hitButton!=null){
+                hitButton.GetComponent<MenuButton>().OnClick();
             }
-            if (OVRInput.GetDown(OVRInput.RawButton.Y))
-            {
-                Debug.Log("Button Y pressed");
-                CastRayForMarkable();
-            }
+        } else {
+            hitButton = null;
         }
 
-        if (hand == Hands.RightHand)
-        {
-            if (OVRInput.GetDown(OVRInput.RawButton.A))
-            {
-                Debug.Log("Button A pressed");
-                CastRayForMarkable();
-            }
-            if (OVRInput.GetDown(OVRInput.RawButton.B))
-            {
-                Debug.Log("Button B pressed");
-                CastRayForMarkable();
-            }
-        }*/
         
     }
 
     float castRadius = 0.2f;
     RaycastHit[] hits;
+
+    public GameObject hitButton;
+    public void CastRayForMenu(){
+        //Debug.Log("casting ray");
+        RaycastHit hit;
+        int newMask = 1 << LayerMask.NameToLayer("OtherUI");
+        if(Physics.Raycast(transform.position,transform.forward,out hit, 25,newMask)){
+            hitButton = hit.collider.gameObject;
+            //hitButton.Select();
+            //Debug.Log(hitButton.name);
+        } else {
+            hitButton = null;
+        }
+    }
     public void CastRayForMarkable()
     {
         hits = Physics.SphereCastAll(transform.position, castRadius, transform.forward, 10, mask);
