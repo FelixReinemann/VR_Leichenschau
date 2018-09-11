@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 54888975792785936}
   - component: {fileID: 65390131258920974}
+  - component: {fileID: 114527890777709434}
   m_Layer: 0
   m_Name: plate
   m_TagString: Untagged
@@ -112,3 +113,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 24.232925, y: 24.232931, z: 5.933242}
   m_Center: {x: 0, y: 1.0164395e-20, z: 0.0000014305118}
+--- !u!114 &114527890777709434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedJoint: {fileID: 0}
+  connectedTo: {fileID: 0}

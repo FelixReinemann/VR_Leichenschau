@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4126817863967328}
   - component: {fileID: 33015834928766326}
   - component: {fileID: 23883803666237688}
-  - component: {fileID: 54205335009500632}
   - component: {fileID: 136451202564972572}
+  - component: {fileID: 114074815478899636}
+  - component: {fileID: 54733642212881174}
   m_Layer: 0
   m_Name: Dose
   m_TagString: Untagged
@@ -36,8 +37,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1731677962777484}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5874062, y: 0.09552226, z: 0.20995206}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.35889614, y: 0.10627948, z: -0.3863082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8190d844e1ab6964992b478ad0b5739d, type: 2}
+  - {fileID: 2100000, guid: aab44972e83e382408a8ba6c78d781fe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1731677962777484}
   m_Mesh: {fileID: 4300034, guid: d6a4841e161f1b246a7f10f0f36c9016, type: 3}
---- !u!54 &54205335009500632
+--- !u!54 &54733642212881174
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,6 +101,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114074815478899636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731677962777484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedJoint: {fileID: 0}
+  connectedTo: {fileID: 0}
 --- !u!136 &136451202564972572
 CapsuleCollider:
   m_ObjectHideFlags: 1

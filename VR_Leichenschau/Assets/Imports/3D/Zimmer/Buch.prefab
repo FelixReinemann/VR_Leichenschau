@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4872507853995134}
   - component: {fileID: 54858276885233478}
   - component: {fileID: 65748182866579132}
+  - component: {fileID: 114207837440280200}
   m_Layer: 0
   m_Name: Buch
   m_TagString: Untagged
@@ -171,3 +172,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.13, y: -0.04, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114207837440280200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079999650258860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedJoint: {fileID: 0}
+  connectedTo: {fileID: 0}
