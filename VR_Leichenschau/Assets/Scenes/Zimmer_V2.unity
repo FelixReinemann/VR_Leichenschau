@@ -21808,10 +21808,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1584726077581994, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbae35b5b4bf2f641afb7530686e819d, type: 2}
   m_IsPrefabAsset: 0
