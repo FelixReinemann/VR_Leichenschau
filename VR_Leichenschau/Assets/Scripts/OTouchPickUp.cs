@@ -127,12 +127,19 @@ public class OTouchPickUp : MonoBehaviour
         {
             for (int i = 0; i < hits.Length; i++)
             {
+                /*
                 MarkableObject script;
                 script = hits[i].collider.attachedRigidbody.GetComponent<MarkableObject>();
                 if (script != null && !script.marked)
                 {
                     script.Mark();
 					break;
+                }*/
+                MenuObject script;
+                script = hits[i].collider.attachedRigidbody.GetComponent<MenuObject>();
+                if(script != null && !script.marked){
+                    script.Mark(hits[i].point + Vector3.up*0.75f);
+                    break;
                 }
             }
         }

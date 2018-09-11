@@ -8,11 +8,24 @@ public class MyMenu : MonoBehaviour {
 	public Vector3 originalPosition;
 	public Quaternion originalRotation;
 
-public void UnParent(){
+
+    public void UnParent()
+    {
+        myOriginalParent = transform.parent;
+        originalPosition = transform.localPosition;
+        originalRotation = transform.localRotation;
+        transform.SetParent(null);
+        //transform.position = _position;
+        transform.LookAt(ManagesScene.singleton.player, Vector3.up);
+
+    }
+public void UnParent(Vector3 _position){
 	myOriginalParent = transform.parent;
 	originalPosition = transform.localPosition;
 	originalRotation = transform.localRotation;
 	transform.SetParent(null);
+	transform.position = _position;
+    transform.LookAt(ManagesScene.singleton.player, Vector3.up);
 	
 }
 
