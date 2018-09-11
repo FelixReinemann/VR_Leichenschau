@@ -17,6 +17,8 @@ public class MenuObject : MarkableObject {
 	public GameObject myMenu;
 	public override void Mark(){
 		Debug.Log("Menu Appears");
+		myMenu.SetActive(true);
+		myMenu.GetComponent<MyMenu>().UnParent();
 	}
 
 }

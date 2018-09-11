@@ -73,9 +73,13 @@ public class OTouchPickUp : MonoBehaviour
             }
         }
 
-        if(myButton[0].state == ButtonStates.Pressed){
+        /*if(myButton[0].state == ButtonStates.Pressed){
             Debug.Log("Button 0 pressed on "+gameObject.name+" pressed");
             CastRayForMarkable();
+        }*/
+
+        if(myBeam.activeSelf && myButton[0].state == ButtonStates.Pressed){
+            CreateMark();
         }
 
         if (myButton[1].state == ButtonStates.Pressed)
@@ -154,6 +158,20 @@ public class OTouchPickUp : MonoBehaviour
                 }
             }
             myButton[i].lastValue = myButton[i].value;
+        }
+    }
+
+    public void CreateMark()
+    {
+        //Vector3 spawnPos = transform.position + new Vector3(Random.Range(-radius, radius), 1 * 0.5f, Random.Range(-radius, radius));
+        RaycastHit hit;
+        if(Physics.Raycast(transform.position,transform.forward,out hit, 25)){
+            Vector3 spawnPos = hit.point+Vector3.up*0.15f;
+            Vector3 playerPos = ManagesScene.singleton.player.position;
+            Quaternion spawnRot = Quaternion.LookRotation(spawnPos - playerPos, Vector3.up);
+            GameObject newMarker = Instantiate(ManagesScene.singleton.markerPrefab, spawnPos, spawnRot);
+            ManagesScene.singleton.markerCount++;
+            newMarker.GetComponentInChildren<UnityEngine.UI.Text>().text = ManagesScene.singleton.markerCount.ToString();
         }
     }
 
