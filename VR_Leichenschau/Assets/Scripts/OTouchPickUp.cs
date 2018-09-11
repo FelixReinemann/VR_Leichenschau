@@ -12,6 +12,8 @@ public class OTouchPickUp : MonoBehaviour
         col = GetComponent<SphereCollider>();
         myRigid = GetComponent<Rigidbody>();
 
+        myBeam.SetActive(false);
+
         if (hand == Hands.LeftHand)
         {
             handTrigger = OVRInput.Axis1D.PrimaryHandTrigger;
@@ -29,6 +31,8 @@ public class OTouchPickUp : MonoBehaviour
     Rigidbody myRigid;
     GameObject grabbedObject;
     //public Transform lTouchController, rTouchController;
+    public ControllerButton[] myButton;
+    public GameObject myBeam;
 
     // Update is called once per frame
 
@@ -36,7 +40,8 @@ public class OTouchPickUp : MonoBehaviour
     int mask;
     void FixedUpdate()
     {
-        OVRInput.Update();
+        //OVRInput.Update();
+        MyButtonUpdate();
         if (OVRInput.Get(handTrigger) > 0)
         {
             grabbing = true;
@@ -68,32 +73,48 @@ public class OTouchPickUp : MonoBehaviour
             }
         }
 
-        if (hand == Hands.RightHand)
-        {
-            if (OVRInput.GetDown(OVRInput.RawButton.A))
-            {
-                Debug.Log("Button 1 pressed");
-                CastRayForMarkable();
-            }
-            if (OVRInput.GetDown(OVRInput.RawButton.B))
-            {
-                Debug.Log("Button 2 pressed");
-                CastRayForMarkable();
-            }
+        if(myButton[0].state == ButtonStates.Pressed){
+            Debug.Log("Button 0 pressed on "+gameObject.name+" pressed");
+            CastRayForMarkable();
         }
-        else
+
+        if (myButton[1].state == ButtonStates.Pressed)
+        {
+            Debug.Log("Button 1 pressed on " + gameObject.name + " pressed");
+            myBeam.SetActive(true);
+        } else if (myButton[1].state == ButtonStates.LetGo){
+            myBeam.SetActive(false);
+        }
+
+        /*
+        if (hand == Hands.LeftHand)
         {
             if (OVRInput.GetDown(OVRInput.RawButton.X))
             {
-                Debug.Log("Button 3 pressed");
+                Debug.Log("Button X pressed");
                 CastRayForMarkable();
             }
             if (OVRInput.GetDown(OVRInput.RawButton.Y))
             {
-                Debug.Log("Button 4 pressed");
+                Debug.Log("Button Y pressed");
                 CastRayForMarkable();
             }
         }
+
+        if (hand == Hands.RightHand)
+        {
+            if (OVRInput.GetDown(OVRInput.RawButton.A))
+            {
+                Debug.Log("Button A pressed");
+                CastRayForMarkable();
+            }
+            if (OVRInput.GetDown(OVRInput.RawButton.B))
+            {
+                Debug.Log("Button B pressed");
+                CastRayForMarkable();
+            }
+        }*/
+        
     }
 
     float castRadius = 0.2f;
@@ -115,8 +136,39 @@ public class OTouchPickUp : MonoBehaviour
             }
         }
     }
+
+    public void MyButtonUpdate(){
+        for(int i=0; i < myButton.Length; i++){
+            myButton[i].value = OVRInput.Get(myButton[i].ovrButton);
+            if(myButton[i].value){
+                if(!myButton[i].lastValue){
+                    myButton[i].state = ButtonStates.Pressed;
+                } else {
+                    myButton[i].state = ButtonStates.Held;
+                }
+            } else {
+                if(myButton[i].lastValue){
+                    myButton[i].state = ButtonStates.LetGo;
+                } else {
+                    myButton[i].state = ButtonStates.NotPressed;
+                }
+            }
+            myButton[i].lastValue = myButton[i].value;
+        }
+    }
+
 }
 
 
 
 public enum Hands { LeftHand, RightHand }
+
+public enum ButtonStates {Held,Pressed,LetGo,NotPressed}
+
+[System.Serializable]
+public class ControllerButton {
+    public ButtonStates state;
+    public OVRInput.RawButton ovrButton;
+    public bool value;
+    public bool lastValue;
+}
