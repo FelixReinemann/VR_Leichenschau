@@ -9,46 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1490690529744828}
+  m_RootGameObject: {fileID: 1549721627621870}
   m_IsPrefabAsset: 1
---- !u!1 &1490690529744828
+--- !u!1 &1549721627621870
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4661332510869874}
-  - component: {fileID: 33791560931336266}
-  - component: {fileID: 23954459290736364}
-  - component: {fileID: 54637626099772010}
-  - component: {fileID: 136524638688042726}
+  - component: {fileID: 4087410923793986}
+  - component: {fileID: 33529484703647398}
+  - component: {fileID: 23177401897996338}
   m_Layer: 0
-  m_Name: "M\xFCll"
+  m_Name: Medikamentenschachtel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4661332510869874
+--- !u!4 &4087410923793986
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490690529744828}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8521787, y: 0.058, z: -0.2919829}
+  m_GameObject: {fileID: 1549721627621870}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.51103973, y: 0.57788086, z: -0.5492182}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23954459290736364
+--- !u!23 &23177401897996338
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490690529744828}
+  m_GameObject: {fileID: 1549721627621870}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +56,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: aab44972e83e382408a8ba6c78d781fe, type: 2}
+  - {fileID: 2100000, guid: 9f6ac44a6432a4a47b0d697b44a48835, type: 3}
+  - {fileID: 2100002, guid: 9f6ac44a6432a4a47b0d697b44a48835, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,38 +77,10 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33791560931336266
+--- !u!33 &33529484703647398
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490690529744828}
-  m_Mesh: {fileID: 4300040, guid: d6a4841e161f1b246a7f10f0f36c9016, type: 3}
---- !u!54 &54637626099772010
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490690529744828}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &136524638688042726
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490690529744828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.052726384
-  m_Height: 0.09690881
-  m_Direction: 1
-  m_Center: {x: 0.0019088946, y: -0.004561713, z: -0.0036894344}
+  m_GameObject: {fileID: 1549721627621870}
+  m_Mesh: {fileID: 4300000, guid: 9f6ac44a6432a4a47b0d697b44a48835, type: 3}
