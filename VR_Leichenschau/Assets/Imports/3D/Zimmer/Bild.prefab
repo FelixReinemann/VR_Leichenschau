@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33047776617435494}
   - component: {fileID: 23447330880343088}
   - component: {fileID: 54530962198841964}
-  - component: {fileID: 64744278375941880}
-  m_Layer: 0
+  - component: {fileID: 65829927476163110}
+  - component: {fileID: 114393170652788344}
+  m_Layer: 9
   m_Name: Bild
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1392289656818594}
   m_LocalRotation: {x: 0.0007488322, y: 0.9804224, z: 0.196898, w: -0.0016313635}
-  m_LocalPosition: {x: 0.034122534, y: 1.1381913, z: 1.7640966}
+  m_LocalPosition: {x: 0.070302725, y: 1.1499181, z: 1.781844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: af3003dac219799499d573270e1e6588, type: 2}
-  - {fileID: 2100000, guid: 27bf8c8bb16605d43aa2368e580aa72b, type: 2}
+  - {fileID: 2100000, guid: 1d6be6d287efff045a505c31ee9632ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101,8 +102,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64744278375941880
-MeshCollider:
+--- !u!65 &65829927476163110
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -110,8 +111,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: d6a4841e161f1b246a7f10f0f36c9016, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.3946449, y: 0.2805, z: 0.21708983}
+  m_Center: {x: 0.00000011922444, y: 0.00000024035748, z: -0.06505844}
+--- !u!114 &114393170652788344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1392289656818594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedJoint: {fileID: 0}
+  connectedTo: {fileID: 0}

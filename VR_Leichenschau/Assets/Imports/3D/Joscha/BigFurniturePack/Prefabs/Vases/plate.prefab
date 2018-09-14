@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 54888975792785936}
   - component: {fileID: 65390131258920974}
   - component: {fileID: 114527890777709434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,9 +26,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.227146, y: 0.3363452, z: 6.7981787}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.006795528}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.3781278, y: 1.061066, z: 1.76413}
+  m_LocalScale: {x: 0.008333332, y: 0.008333336, z: 0.0056629423}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54637626099772010}
   - component: {fileID: 136524638688042726}
   - component: {fileID: 114251839630262998}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "M\xFCll"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1490690529744828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8521787, y: 0.058, z: -0.2919829}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.006, y: 0.057, z: 0.9306484}
+  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.9999998}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

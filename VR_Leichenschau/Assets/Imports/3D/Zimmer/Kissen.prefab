@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54334436570124690}
   - component: {fileID: 65784098450780150}
   - component: {fileID: 114024408645955988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Kissen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1270166536819072}
-  m_LocalRotation: {x: 0.12574033, y: 0.027994053, z: 0.171689, w: 0.9766927}
-  m_LocalPosition: {x: 1.3132058, y: 0.31722677, z: -0.30600938}
+  m_LocalRotation: {x: -0, y: 0.4468849, z: 6.98492e-10, w: 0.8945915}
+  m_LocalPosition: {x: 0.061, y: 0.217, z: 0.418}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 53.088, z: 0}
 --- !u!23 &23309516841894328
 MeshRenderer:
   m_ObjectHideFlags: 1

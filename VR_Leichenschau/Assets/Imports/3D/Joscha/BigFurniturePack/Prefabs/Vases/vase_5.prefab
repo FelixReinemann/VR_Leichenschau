@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 54031204085280682}
   - component: {fileID: 65109119236685162}
   - component: {fileID: 114830324386206782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: vase_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,9 +26,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
-  m_LocalPosition: {x: -6.1077538, y: 0.31514436, z: 4.8221097}
-  m_LocalScale: {x: 0.014356314, y: 0.011377052, z: 0.014356314}
+  m_LocalRotation: {x: -1.7763568e-15, y: 1, z: -0.000000021855694, w: -0.00000008940697}
+  m_LocalPosition: {x: 2.5383701, y: 1.7899197, z: 1.8529594}
+  m_LocalScale: {x: 0.011966664, y: 0.009483333, z: 0.011966664}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
