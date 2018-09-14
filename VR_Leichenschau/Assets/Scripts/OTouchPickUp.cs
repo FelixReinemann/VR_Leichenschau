@@ -79,9 +79,20 @@ public class OTouchPickUp : MonoBehaviour
             CastRayForMarkable();
         }*/
 
+        if(myBeam.activeSelf){
+            CastRayForMenu();
+            if(myButton[0].state == ButtonStates.Pressed && hitButton!=null){
+                hitButton.GetComponent<MenuButton>().OnClick();
+            }
+        } else {
+            hitButton = null;
+        }
+
         if(myBeam.activeSelf && myButton[0].state == ButtonStates.Pressed && hitButton == null){
-            CreateMark();
-            CastRayForMarkable();
+            if(!CastRayForMarkable()){
+                CreateMark();
+            }
+            
         }
 
         if (myButton[1].state == ButtonStates.Pressed)
@@ -92,14 +103,7 @@ public class OTouchPickUp : MonoBehaviour
             myBeam.SetActive(false);
         }
 
-        if(myBeam.activeSelf){
-            CastRayForMenu();
-            if(myButton[0].state == ButtonStates.Pressed && hitButton!=null){
-                hitButton.GetComponent<MenuButton>().OnClick();
-            }
-        } else {
-            hitButton = null;
-        }
+        
 
         
     }
@@ -108,7 +112,7 @@ public class OTouchPickUp : MonoBehaviour
     RaycastHit[] hits;
 
     public GameObject hitButton;
-    public void CastRayForMenu(){
+    public bool CastRayForMenu(){
         //Debug.Log("casting ray");
         RaycastHit hit;
         int newMask = 1 << LayerMask.NameToLayer("OtherUI");
@@ -116,12 +120,15 @@ public class OTouchPickUp : MonoBehaviour
             hitButton = hit.collider.gameObject;
             //hitButton.Select();
             //Debug.Log(hitButton.name);
+            return true;
         } else {
             hitButton = null;
+            return false;
         }
     }
-    public void CastRayForMarkable()
+    public bool CastRayForMarkable()
     {
+        bool myBool=false;
         hits = Physics.SphereCastAll(transform.position, castRadius, transform.forward, 10, mask);
         if (hits.Length > 0)
         {
@@ -139,10 +146,12 @@ public class OTouchPickUp : MonoBehaviour
                 script = hits[i].collider.attachedRigidbody.GetComponent<MenuObject>();
                 if(script != null && !script.marked){
                     script.Mark(hits[i].point + Vector3.up*0.75f);
+                    myBool=true;
                     break;
                 }
             }
         }
+        return myBool;
     }
 
     public void MyButtonUpdate(){
