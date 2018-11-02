@@ -27,9 +27,9 @@ public class GrabableObject : MonoBehaviour {
 		if(fixedJoint!=null){
 			Debug.Log("currentForce: "+fixedJoint.currentForce+"; currentTorque: "+fixedJoint.currentTorque);
 		}
-		if(fixedJoint!= null && fixedJoint.currentForce.magnitude > breakForce){
+		/*if(fixedJoint!= null && fixedJoint.currentForce.magnitude > breakForce){
 			Release();
-		}
+		}*/
 	}
 
 	void FixedUpdate(){
@@ -44,11 +44,17 @@ public class GrabableObject : MonoBehaviour {
 		connectedTo = hand;
 		fixedJoint = gameObject.AddComponent<FixedJoint>();
 		fixedJoint.connectedBody = hand;
+		fixedJoint.enablePreprocessing = false;
 		//fixedJoint.breakForce = 30;
-		breakForce = 125;
+		breakForce = 30;
 		myRigid.useGravity = false;
 		//myRigid.isKinematic = true;
 		//spring.connectedAnchor = grabbedTo.position;
+	}
+
+	void OnJointBreak(float breakForce){
+		connectedTo = null;
+		myRigid.useGravity = true;
 	}
 
 	public void Release(){
