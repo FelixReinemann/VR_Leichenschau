@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class VRMove : MonoBehaviour
 {
-
+    public static VRMove singleton;
+    void Awake(){
+        if(VRMove.singleton==null){
+            VRMove.singleton = this;
+        }
+    }
     public float moveSpeed;
     public float rotationSpeed;
 
@@ -15,9 +20,12 @@ public class VRMove : MonoBehaviour
     public Transform toRotate;
     Quaternion myRotation;
     // Use this for initialization
+
+    public Vector3 myOffset;
+
     void Start()
     {
-
+        myOffset = transform.localPosition;
     }
 
     // Update is called once per frame
@@ -39,4 +47,11 @@ public class VRMove : MonoBehaviour
         //--------------rotation--------------//
         toRotate.RotateAround(head.position, Vector3.up, Time.deltaTime * rotationSpeed * rotateStick.x);
     }
+
+    public void TeleportToPosition(Vector3 targetPosition){
+        Vector3 distanceToHead = transform.position-head.position;
+        distanceToHead.y = 0;
+        transform.position = myOffset+targetPosition+(distanceToHead);
+    }
+
 }

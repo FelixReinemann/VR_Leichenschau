@@ -55,7 +55,7 @@ public class OTouchPickUp : MonoBehaviour
                 for (int i = 0; i < colObjects.Length; i++)
                 {
                     script = colObjects[i].attachedRigidbody.GetComponent<GrabableObject>();
-                    if (script.fixedJoint == null)
+                    if (script.spring == null)
                     {
                         script.OnGrab(myRigid);
                         grabbedObject = colObjects[i].attachedRigidbody.gameObject;
@@ -101,6 +101,13 @@ public class OTouchPickUp : MonoBehaviour
             myBeam.SetActive(true);
         } else if (myButton[1].state == ButtonStates.LetGo){
             myBeam.SetActive(false);
+        }
+
+        if(myBeam.activeSelf && myButton[2].state == ButtonStates.Pressed){
+            Vector3 targetPos;
+            if(CastRayForGround(out targetPos)){
+                VRMove.singleton.TeleportToPosition(targetPos);
+            }
         }
 
         
@@ -154,6 +161,17 @@ public class OTouchPickUp : MonoBehaviour
         return myBool;
     }
 
+    public bool CastRayForGround(out Vector3 _position){
+        RaycastHit hit;
+        int groundMask = LayerMask.NameToLayer("Ground");
+        if(Physics.Raycast(transform.position,transform.forward,out hit,100f,groundMask)){
+            _position = hit.point;
+            return true;
+        }
+        _position = Vector3.zero;
+        return false;
+    }
+
     public void MyButtonUpdate(){
         for(int i=0; i < myButton.Length; i++){
             myButton[i].value = OVRInput.Get(myButton[i].ovrButton);
@@ -178,6 +196,7 @@ public class OTouchPickUp : MonoBehaviour
     {
         //Vector3 spawnPos = transform.position + new Vector3(Random.Range(-radius, radius), 1 * 0.5f, Random.Range(-radius, radius));
         RaycastHit hit;
+        
         if(Physics.Raycast(transform.position,transform.forward,out hit, 25)){
             Vector3 spawnPos = hit.point+Vector3.up*0.15f;
             Vector3 playerPos = ManagesScene.singleton.player.position;

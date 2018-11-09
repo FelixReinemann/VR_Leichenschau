@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GrabableObject : MonoBehaviour {
 	
-	public FixedJoint fixedJoint;
+	public SpringJoint spring;
 	public Rigidbody connectedTo;
 	Rigidbody myRigid;
 
@@ -14,9 +14,9 @@ public class GrabableObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myRigid = GetComponent<Rigidbody>();
-		fixedJoint = GetComponent<FixedJoint>();
-		if(fixedJoint!=null){
-			Destroy(fixedJoint);
+		spring = GetComponent<SpringJoint>();
+		if(spring!=null){
+			Destroy(spring);
 		}
 	}
 	
@@ -24,10 +24,12 @@ public class GrabableObject : MonoBehaviour {
 		if(connectedTo!=null){
 			//spring.connectedAnchor = connectedTo.position;
 		}
-		if(fixedJoint!=null){
-			Debug.Log("currentForce: "+fixedJoint.currentForce+"; currentTorque: "+fixedJoint.currentTorque);
+		if(spring!=null){
+			Debug.Log("currentForce: "+spring.currentForce+"; currentTorque: "+spring.currentTorque);
+			Debug.DrawLine(spring.anchor,spring.connectedAnchor,Color.blue);
+			Debug.DrawLine(spring.anchor, spring.connectedBody.position);
 		}
-		/*if(fixedJoint!= null && fixedJoint.currentForce.magnitude > breakForce){
+		/*if(spring!= null && spring.currentForce.magnitude > breakForce){
 			Release();
 		}*/
 	}
@@ -38,15 +40,20 @@ public class GrabableObject : MonoBehaviour {
 
 	public void OnGrab(Rigidbody hand){
 		Debug.Log("grab got called");
-		if(fixedJoint!=null){
+		if(spring!=null){
 			return;
 		}
 		connectedTo = hand;
-		fixedJoint = gameObject.AddComponent<FixedJoint>();
-		fixedJoint.connectedBody = hand;
-		fixedJoint.enablePreprocessing = false;
-		//fixedJoint.breakForce = 30;
-		breakForce = 30;
+		spring = gameObject.AddComponent<SpringJoint>();
+		spring.connectedBody = hand;
+		spring.enablePreprocessing = false;
+		spring.maxDistance=0.01f;
+		spring.minDistance=0f;
+		spring.damper=1f;
+		spring.connectedMassScale=50f;
+		
+		//spring.breakForce = 30;
+		//breakForce = 30;
 		myRigid.useGravity = false;
 		//myRigid.isKinematic = true;
 		//spring.connectedAnchor = grabbedTo.position;
@@ -59,8 +66,8 @@ public class GrabableObject : MonoBehaviour {
 
 	public void Release(){
 		connectedTo = null;
-		//fixedJoint.connectedBody = null;
-		Destroy(fixedJoint);
+		//spring.connectedBody = null;
+		Destroy(spring);
 		myRigid.useGravity = true;
 		//myRigid.isKinematic = false;
 	}
