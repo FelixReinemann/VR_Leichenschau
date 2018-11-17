@@ -25,9 +25,9 @@ public class GrabableObject : MonoBehaviour {
 			//spring.connectedAnchor = connectedTo.position;
 		}
 		if(spring!=null){
-			Debug.Log("currentForce: "+spring.currentForce+"; currentTorque: "+spring.currentTorque);
-			Debug.DrawLine(spring.anchor,spring.connectedAnchor,Color.blue);
-			Debug.DrawLine(spring.anchor, spring.connectedBody.position);
+			//Debug.Log("currentForce: "+spring.currentForce+"; currentTorque: "+spring.currentTorque);
+			//Debug.DrawLine(spring.anchor,spring.connectedAnchor,Color.blue);
+			//Debug.DrawLine(spring.anchor, spring.connectedBody.position);
 		}
 		/*if(spring!= null && spring.currentForce.magnitude > breakForce){
 			Release();
