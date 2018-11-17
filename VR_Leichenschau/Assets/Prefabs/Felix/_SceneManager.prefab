@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 114284423947745570}
   - component: {fileID: 65966781318723198}
   m_Layer: 10
-  m_Name: Button (2)
+  m_Name: KoerperWenden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 114516091582961598}
   - component: {fileID: 65245964634988584}
   m_Layer: 10
-  m_Name: Button (1)
+  m_Name: KleidungEntfernen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 114870318016516156}
   - component: {fileID: 65437191117515058}
   m_Layer: 10
-  m_Name: Button (4)
+  m_Name: MenuSchliessen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1310740333729068
 GameObject:
   m_ObjectHideFlags: 1
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 114475549747016194}
   - component: {fileID: 65542075589652000}
   m_Layer: 10
-  m_Name: Button (3)
+  m_Name: TemperaturNehmen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 114772698117840614}
   - component: {fileID: 65087157404258916}
   m_Layer: 10
-  m_Name: Button
+  m_Name: KoerperFreilegen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1768,6 +1768,18 @@ MonoBehaviour:
   myOriginalParent: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  buttonObjects:
+  - theButton: {fileID: 1699127371477144}
+    buttonState: 0
+  - theButton: {fileID: 1083837447959414}
+    buttonState: 0
+  - theButton: {fileID: 1031751824034672}
+    buttonState: 0
+  - theButton: {fileID: 1656551039497114}
+    buttonState: 0
+  - theButton: {fileID: 1278504197114568}
+    buttonState: 0
+  spawnButtonsIn: {fileID: 0}
 --- !u!114 &114407432141154124
 MonoBehaviour:
   m_ObjectHideFlags: 1

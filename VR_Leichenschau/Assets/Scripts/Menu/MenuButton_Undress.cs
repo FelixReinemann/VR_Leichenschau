@@ -10,5 +10,8 @@ public class MenuButton_Undress : MenuButton
         dressed.SetActive(false);
 		undressed.SetActive(true);
 		undressed.GetComponent<CopySkeletonPositions>().TransportBonePositions();
+        disableButtonInMenu();
+        closeMenu();
     }
+
 }

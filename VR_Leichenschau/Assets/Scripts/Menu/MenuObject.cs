@@ -17,12 +17,14 @@ public class MenuObject : MarkableObject {
 	public GameObject myMenu;
 	public override void Mark(){
 		Debug.Log("Menu Appears");
+		myMenu.GetComponent<MyMenu>().gotCalledFrom = this.gameObject;
 		myMenu.SetActive(true);
 		myMenu.GetComponent<MyMenu>().UnParent();
 	}
     public void Mark(Vector3 _position)
     {
         Debug.Log("Menu Appears");
+        myMenu.GetComponent<MyMenu>().gotCalledFrom = this.gameObject;
         myMenu.SetActive(true);
         myMenu.GetComponent<MyMenu>().UnParent(_position);
     }
