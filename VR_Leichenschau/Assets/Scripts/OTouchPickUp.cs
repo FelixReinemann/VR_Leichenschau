@@ -163,7 +163,7 @@ public class OTouchPickUp : MonoBehaviour
 
     public bool CastRayForGround(out Vector3 _position){
         RaycastHit hit;
-        int groundMask = LayerMask.NameToLayer("Ground");
+        int groundMask = LayerMask.NameToLayer("Teleportable");
         if(Physics.Raycast(transform.position,transform.forward,out hit,100f,groundMask)){
             _position = hit.point;
             return true;
