@@ -3288,6 +3288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRoot: {fileID: 1241636057}
   myRoot: {fileID: 1763957040}
+  useOnlyRigidbodies: 0
 --- !u!114 &113138234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15599,6 +15600,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114516091582961598, guid: 9ae31119db204264c96293567dc2426d,
+        type: 2}
+      propertyPath: applyAllJointData
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae31119db204264c96293567dc2426d, type: 2}
   m_IsPrefabAsset: 0
@@ -23284,6 +23290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRoot: {fileID: 1990782543}
   myRoot: {fileID: 1241636057}
+  useOnlyRigidbodies: 0
 --- !u!95 &858919048
 Animator:
   serializedVersion: 3
