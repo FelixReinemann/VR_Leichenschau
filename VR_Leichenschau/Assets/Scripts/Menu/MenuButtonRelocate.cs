@@ -8,6 +8,7 @@ public class MenuButtonRelocate : MenuButton {
 	public Transform targetRoot;
 	public override void OnClick(){
 		body = GetComponentInParent<MyMenu>().gotCalledFrom.GetComponentInParent<Animator>().gameObject;
+		Debug.Log(GetComponentInParent<MyMenu>().gotCalledFrom.GetComponentInParent<Animator>().gameObject.name);
 		body.GetComponent<CopySkeletonPositions>().targetRoot = targetRoot;
 		body.GetComponent<CopySkeletonPositions>().TransportBonePositions();
 		disableButtonInMenu();

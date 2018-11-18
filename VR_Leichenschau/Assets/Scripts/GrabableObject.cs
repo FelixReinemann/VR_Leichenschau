@@ -10,6 +10,8 @@ public class GrabableObject : MonoBehaviour {
 	public Rigidbody connectedTo;
 	Rigidbody myRigid;
 
+	public bool isBodyPart=false;
+
 	float breakForce;
 	// Use this for initialization
 	void Start () {
@@ -57,11 +59,19 @@ public class GrabableObject : MonoBehaviour {
 		myRigid.useGravity = false;
 		//myRigid.isKinematic = true;
 		//spring.connectedAnchor = grabbedTo.position;
+		ChangeAllChildComponents someScript = GetComponentInParent<Animator>().GetComponent<ChangeAllChildComponents>();
+		if(someScript!=null){
+			someScript.drag=10f;
+		}
+		if(isBodyPart)
+			GetComponentInParent<Animator>().GetComponent<ChangeAllChildComponents>().drag = 10f;
 	}
 
 	void OnJointBreak(float breakForce){
 		connectedTo = null;
 		myRigid.useGravity = true;
+        if (isBodyPart)
+            GetComponentInParent<Animator>().GetComponent<ChangeAllChildComponents>().drag = 4f;
 	}
 
 	public void Release(){
@@ -69,6 +79,8 @@ public class GrabableObject : MonoBehaviour {
 		//spring.connectedBody = null;
 		Destroy(grabJoint);
 		myRigid.useGravity = true;
+        if (isBodyPart)
+            GetComponentInParent<Animator>().GetComponent<ChangeAllChildComponents>().drag = 4f;
 		//myRigid.isKinematic = false;
 	}
 }

@@ -6,18 +6,27 @@ using UnityEngine;
 public class ChangeAllChildComponents : MonoBehaviour {
 
 	// Use this for initialization
+	public bool changeAllRigidBodies=true;
+	public bool changeAllGrabableObjects=false;
+	public bool grabableScriptsAreBodyParts=true;
 	void Start () {
 		UpdateMyRigidsArray();
-		UpdateMyRigidsData();
+		if(changeAllRigidBodies)
+			UpdateMyRigidsData();
 	}
 	
 	Rigidbody[] myRigids;
 	public float mass=1f, drag, dragTorque;
 
 	void Update () {
-		if(myRigids.Length==0)return;
-		if(mass!=myRigids[0].mass || drag != myRigids[0].drag || dragTorque != myRigids[0].angularDrag){
-			UpdateMyRigidsData();
+		if(myRigids.Length>0 && changeAllRigidBodies)
+			if(mass!=myRigids[0].mass || drag != myRigids[0].drag || dragTorque != myRigids[0].angularDrag){
+				UpdateMyRigidsData();
+			}
+		if(changeAllGrabableObjects){
+			foreach(GrabableObject script in GetComponentsInChildren<GrabableObject>()){
+				script.isBodyPart=grabableScriptsAreBodyParts;
+			}
 		}
 	}
 

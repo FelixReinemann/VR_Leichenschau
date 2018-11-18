@@ -3301,9 +3301,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886d2e9be1188ba49b59f35026afe2bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeAllRigidBodies: 1
+  changeAllGrabableObjects: 0
+  grabableScriptsAreBodyParts: 1
   mass: 4
-  drag: 3
-  dragTorque: 3
+  drag: 5
+  dragTorque: 5
 --- !u!114 &113138235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3751,8 +3754,8 @@ Rigidbody:
   m_GameObject: {fileID: 135934564}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3772,6 +3775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &135934568
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -8473,6 +8477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!65 &334037589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9046,8 +9051,8 @@ Rigidbody:
   m_GameObject: {fileID: 346073998}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -9123,6 +9128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!1 &349917853
 GameObject:
   m_ObjectHideFlags: 0
@@ -11923,6 +11929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!1 &463653083
 GameObject:
   m_ObjectHideFlags: 0
@@ -12511,8 +12518,8 @@ Rigidbody:
   m_GameObject: {fileID: 478906624}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -12588,6 +12595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!4 &480278048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4074941742552120, guid: fbae35b5b4bf2f641afb7530686e819d,
@@ -13268,6 +13276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!65 &504829239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13326,8 +13335,8 @@ Rigidbody:
   m_GameObject: {fileID: 511415849}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -13402,6 +13411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!1001 &512360051
 Prefab:
   m_ObjectHideFlags: 0
@@ -13608,6 +13618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &514048996
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -14079,8 +14090,8 @@ Rigidbody:
   m_GameObject: {fileID: 528054954}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -14100,6 +14111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &528054958
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -14355,6 +14367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &537304443
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -14409,8 +14422,8 @@ Rigidbody:
   m_GameObject: {fileID: 537304440}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -15419,8 +15432,8 @@ Rigidbody:
   m_GameObject: {fileID: 570951750}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -15451,6 +15464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!1001 &571885949
 Prefab:
   m_ObjectHideFlags: 0
@@ -16800,6 +16814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!4 &608782814 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4429080816481098, guid: e82d48fd712cc3942bfcaa6ec5769da6,
@@ -17228,8 +17243,8 @@ Rigidbody:
   m_GameObject: {fileID: 625772755}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -17305,6 +17320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!4 &626707525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4074941742552120, guid: fbae35b5b4bf2f641afb7530686e819d,
@@ -18242,6 +18258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &661561780
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -18296,8 +18313,8 @@ Rigidbody:
   m_GameObject: {fileID: 661561777}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -19584,6 +19601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &704239718
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -20689,6 +20707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!4 &752056733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4436948343729210, guid: 3d61e5dfdc4646a4ea4596c9b1c3caff,
@@ -23166,8 +23185,8 @@ Rigidbody:
   m_GameObject: {fileID: 858841234}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -23265,9 +23284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886d2e9be1188ba49b59f35026afe2bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeAllRigidBodies: 1
+  changeAllGrabableObjects: 0
+  grabableScriptsAreBodyParts: 1
   mass: 4
-  drag: 3
-  dragTorque: 3
+  drag: 5
+  dragTorque: 5
 --- !u!114 &858919050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23458,6 +23480,10 @@ Prefab:
         type: 2}
       propertyPath: buttonObjects.Array.data[5].buttonState
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274372596125560, guid: 9ae31119db204264c96293567dc2426d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae31119db204264c96293567dc2426d, type: 2}
@@ -23696,6 +23722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &866397464
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -23750,8 +23777,8 @@ Rigidbody:
   m_GameObject: {fileID: 866397461}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -23902,6 +23929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &870217114
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -24419,6 +24447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &884677908
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -24473,8 +24502,8 @@ Rigidbody:
   m_GameObject: {fileID: 884677905}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -25069,6 +25098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &931266343
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -26778,6 +26808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &1001078172
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -28776,6 +28807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &1073447440
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -29490,8 +29522,8 @@ Rigidbody:
   m_GameObject: {fileID: 1089588790}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -29567,6 +29599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!4 &1089692315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4988446471871508, guid: e00a6f4f7a78edf41933150b2f096f9f,
@@ -33184,6 +33217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &1243439455
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -33238,8 +33272,8 @@ Rigidbody:
   m_GameObject: {fileID: 1243439452}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -33401,6 +33435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &1256724714
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -34415,8 +34450,8 @@ Rigidbody:
   m_GameObject: {fileID: 1297161663}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -34448,6 +34483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!1 &1297280026
 GameObject:
   m_ObjectHideFlags: 0
@@ -37556,6 +37592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!1 &1422004774
 GameObject:
   m_ObjectHideFlags: 0
@@ -43483,6 +43520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &1655669528
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -44018,6 +44056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!4 &1679715215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e,
@@ -45442,8 +45481,8 @@ Rigidbody:
   m_GameObject: {fileID: 1751174502}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -45463,6 +45502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &1751174506
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -45734,8 +45774,8 @@ Rigidbody:
   m_GameObject: {fileID: 1763957039}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -45779,6 +45819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!4 &1767068366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e,
@@ -48181,6 +48222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!1 &1887694928
 GameObject:
   m_ObjectHideFlags: 0
@@ -48424,8 +48466,8 @@ Rigidbody:
   m_GameObject: {fileID: 1895351965}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -48457,6 +48499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!1 &1895369517
 GameObject:
   m_ObjectHideFlags: 0
@@ -48544,8 +48587,8 @@ Rigidbody:
   m_GameObject: {fileID: 1895369517}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -48577,6 +48620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!1 &1895440114
 GameObject:
   m_ObjectHideFlags: 0
@@ -49432,6 +49476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &1930866437
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -49622,8 +49667,8 @@ Rigidbody:
   m_GameObject: {fileID: 1933397273}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -49643,6 +49688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &1933397277
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -52041,6 +52087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!144 &2037981688
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -52304,6 +52351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!144 &2041369311
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -52358,8 +52406,8 @@ Rigidbody:
   m_GameObject: {fileID: 2041369308}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -52829,6 +52877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!54 &2051140594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53386,8 +53435,8 @@ Rigidbody:
   m_GameObject: {fileID: 2068209167}
   serializedVersion: 2
   m_Mass: 4
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -53419,6 +53468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 1
 --- !u!4 &2068867639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4672649578174436, guid: 3dd0918781e7dba4dbd58dc7a2b9b62e,
@@ -55176,6 +55226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!54 &2130505372
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55457,6 +55508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
+  isBodyPart: 0
 --- !u!1001 &2142810173
 Prefab:
   m_ObjectHideFlags: 0
