@@ -55,7 +55,7 @@ public class OTouchPickUp : MonoBehaviour
                 for (int i = 0; i < colObjects.Length; i++)
                 {
                     script = colObjects[i].attachedRigidbody.GetComponent<GrabableObject>();
-                    if (script.spring == null)
+                    if (script.grabJoint == null)
                     {
                         script.OnGrab(myRigid);
                         grabbedObject = colObjects[i].attachedRigidbody.gameObject;

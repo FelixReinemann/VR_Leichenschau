@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GrabableObject : MonoBehaviour {
 	
-	public SpringJoint spring;
+	public FixedJoint grabJoint;
 	public Rigidbody connectedTo;
 	Rigidbody myRigid;
 
@@ -14,9 +14,9 @@ public class GrabableObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myRigid = GetComponent<Rigidbody>();
-		spring = GetComponent<SpringJoint>();
-		if(spring!=null){
-			Destroy(spring);
+		grabJoint = GetComponent<FixedJoint>();
+		if(grabJoint!=null){
+			Destroy(grabJoint);
 		}
 	}
 	
@@ -24,7 +24,7 @@ public class GrabableObject : MonoBehaviour {
 		if(connectedTo!=null){
 			//spring.connectedAnchor = connectedTo.position;
 		}
-		if(spring!=null){
+		if(grabJoint!=null){
 			//Debug.Log("currentForce: "+spring.currentForce+"; currentTorque: "+spring.currentTorque);
 			//Debug.DrawLine(spring.anchor,spring.connectedAnchor,Color.blue);
 			//Debug.DrawLine(spring.anchor, spring.connectedBody.position);
@@ -40,17 +40,17 @@ public class GrabableObject : MonoBehaviour {
 
 	public void OnGrab(Rigidbody hand){
 		Debug.Log("grab got called");
-		if(spring!=null){
+		if(grabJoint!=null){
 			return;
 		}
 		connectedTo = hand;
-		spring = gameObject.AddComponent<SpringJoint>();
-		spring.connectedBody = hand;
-		spring.enablePreprocessing = false;
-		spring.maxDistance=0.01f;
-		spring.minDistance=0f;
-		spring.damper=1f;
-		spring.connectedMassScale=50f;
+		grabJoint = gameObject.AddComponent<FixedJoint>();
+		grabJoint.connectedBody = hand;
+		grabJoint.enablePreprocessing = false;
+		//grabJoint.maxDistance=0.01f;
+		//grabJoint.minDistance=0f;
+		//grabJoint.damper=1f;
+		//grabJoint.connectedMassScale=50f;
 		
 		//spring.breakForce = 30;
 		//breakForce = 30;
@@ -67,7 +67,7 @@ public class GrabableObject : MonoBehaviour {
 	public void Release(){
 		connectedTo = null;
 		//spring.connectedBody = null;
-		Destroy(spring);
+		Destroy(grabJoint);
 		myRigid.useGravity = true;
 		//myRigid.isKinematic = false;
 	}
