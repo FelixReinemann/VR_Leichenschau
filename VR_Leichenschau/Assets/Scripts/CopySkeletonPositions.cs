@@ -6,6 +6,7 @@ public class CopySkeletonPositions : MonoBehaviour {
 
 	public Transform targetRoot;
 	public Transform myRoot;
+	public bool useOnlyRigidbodies;
 
 	void Update(){
 		if(Input.GetKeyDown(KeyCode.A)){

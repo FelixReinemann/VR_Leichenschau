@@ -52,12 +52,13 @@ public class OTouchPickUp : MonoBehaviour
                 if (myBeam.activeSelf)
                 {
                     GameObject hitTarget;
-                    CastRayForGrabable(out hitTarget);
-                    GrabableObject script = hitTarget.GetComponent<GrabableObject>();
-                    if (script != null)
-                    {
-                        script.OnGrab(myRigid);
-                        grabbedObject = hitTarget;
+                    if(CastRayForGrabable(out hitTarget)){
+                        GrabableObject script = hitTarget.GetComponent<GrabableObject>();
+                        if (script != null)
+                        {
+                            script.OnGrab(myRigid);
+                            grabbedObject = hitTarget;
+                        }
                     }
                 }
                 else
