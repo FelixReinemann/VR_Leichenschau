@@ -7,7 +7,7 @@ public class MenuButton_TurnBody : MenuButton {
 	public override void OnClick(){
 		ManagesScene.currentActiveBody.transform.Translate(Vector3.up*0.3f,Space.World);
 		ManagesScene.currentActiveBody.transform.RotateAround(	ManagesScene.currentActiveBody.GetComponent<RegisterBody>().getCenterFrom.bounds.center,
-																ManagesScene.currentActiveBody.transform.up,
+                                                                ManagesScene.currentActiveBody.GetComponent<RegisterBody>().getDirectionFrom.forward,
 																180f);
 	}
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class RegisterBody : MonoBehaviour {
 
 	public Renderer getCenterFrom;
+	public Transform getDirectionFrom;
 
 	// Use this for initialization
 	void Start () {
