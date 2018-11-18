@@ -3227,6 +3227,7 @@ GameObject:
   - component: {fileID: 113138232}
   - component: {fileID: 113138231}
   - component: {fileID: 113138233}
+  - component: {fileID: 113138234}
   m_Layer: 0
   m_Name: Leiche_V1_Nackt
   m_TagString: Untagged
@@ -3287,6 +3288,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRoot: {fileID: 1241636057}
   myRoot: {fileID: 1763957040}
+--- !u!114 &113138234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 113138230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886d2e9be1188ba49b59f35026afe2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 4
+  drag: 3
+  dragTorque: 3
 --- !u!1 &113722815
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,9 +3735,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 135934564}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3740,7 +3755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &135934568
 CharacterJoint:
@@ -8503,7 +8518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!65 &334037589
 BoxCollider:
@@ -9077,9 +9092,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346073998}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -9095,7 +9110,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.017651081, y: 0.023709249, z: 0.007671056}
+  m_ConnectedAnchor: {x: -0.017651176, y: 0.023709262, z: 0.0076710293}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -9153,7 +9168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &349917853
 GameObject:
@@ -11953,7 +11968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &463653083
 GameObject:
@@ -12542,9 +12557,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478906624}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -12560,7 +12575,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.011678842, y: 0.01027837, z: 0.009909903}
+  m_ConnectedAnchor: {x: 0.011678887, y: 0.010278311, z: 0.009909898}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -12618,7 +12633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &480278048 stripped
 Transform:
@@ -13298,7 +13313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!65 &504829239
 BoxCollider:
@@ -13357,9 +13372,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 511415849}
   serializedVersion: 2
-  m_Mass: 4.6875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -13375,7 +13390,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.3097683e-11, y: 0.00770355, z: -0.02484547}
+  m_ConnectedAnchor: {x: -2.3097968e-11, y: 0.0077036433, z: -0.024845462}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -13432,7 +13447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1001 &512360051
 Prefab:
@@ -13638,7 +13653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &514048996
 CharacterJoint:
@@ -14110,9 +14125,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 528054954}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -14130,7 +14145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &528054958
 CharacterJoint:
@@ -14385,7 +14400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &537304443
 CharacterJoint:
@@ -14440,9 +14455,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 537304440}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -15409,7 +15424,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.2224568e-11, y: 0.043231733, z: 0.012719587}
+  m_ConnectedAnchor: {x: 4.222457e-11, y: 0.04323172, z: 0.012719669}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -15450,9 +15465,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 570951750}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -15481,7 +15496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1001 &571885949
 Prefab:
@@ -16830,7 +16845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &608782814 stripped
 Transform:
@@ -17259,9 +17274,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625772755}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -17277,7 +17292,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.017651081, y: 0.023709234, z: 0.0076710554}
+  m_ConnectedAnchor: {x: 0.017651176, y: 0.02370924, z: 0.007671021}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -17335,7 +17350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &626707525 stripped
 Transform:
@@ -18272,7 +18287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &661561780
 CharacterJoint:
@@ -18327,9 +18342,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661561777}
   serializedVersion: 2
-  m_Mass: 4.6875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -19614,7 +19629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &704239718
 CharacterJoint:
@@ -20719,7 +20734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &752056733 stripped
 Transform:
@@ -23197,9 +23212,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 858841234}
   serializedVersion: 2
-  m_Mass: 4.6875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -23243,6 +23258,7 @@ GameObject:
   - component: {fileID: 401196260}
   - component: {fileID: 858919048}
   - component: {fileID: 858919047}
+  - component: {fileID: 858919049}
   m_Layer: 9
   m_Name: Leiche_V1_Angezogen
   m_TagString: Untagged
@@ -23283,6 +23299,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &858919049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858919046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886d2e9be1188ba49b59f35026afe2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 4
+  drag: 3
+  dragTorque: 3
 --- !u!1 &859159880
 GameObject:
   m_ObjectHideFlags: 0
@@ -23546,7 +23576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &866397464
 CharacterJoint:
@@ -23601,9 +23631,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866397461}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -23752,7 +23782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &870217114
 CharacterJoint:
@@ -24269,7 +24299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &884677908
 CharacterJoint:
@@ -24324,9 +24354,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884677905}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -24919,7 +24949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &931266343
 CharacterJoint:
@@ -26628,7 +26658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1001078172
 CharacterJoint:
@@ -28626,7 +28656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1073447440
 CharacterJoint:
@@ -29341,9 +29371,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1089588790}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -29359,7 +29389,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.011678839, y: 0.01027837, z: 0.009909903}
+  m_ConnectedAnchor: {x: -0.011678887, y: 0.010278311, z: 0.009909898}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -29417,7 +29447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &1089692315 stripped
 Transform:
@@ -33034,7 +33064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1243439455
 CharacterJoint:
@@ -33089,9 +33119,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1243439452}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -33251,7 +33281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1256724714
 CharacterJoint:
@@ -34225,7 +34255,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000069849193, y: 0.037192468, z: -0.000000014901161}
+  m_ConnectedAnchor: {x: 0.00000005448237, y: 0.037192486, z: -0.00000008381903}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -34266,9 +34296,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297161663}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -34298,7 +34328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &1297280026
 GameObject:
@@ -37406,7 +37436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &1422004774
 GameObject:
@@ -43333,7 +43363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1655669528
 CharacterJoint:
@@ -43868,7 +43898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &1679715215 stripped
 Transform:
@@ -45293,9 +45323,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751174502}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -45313,7 +45343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1751174506
 CharacterJoint:
@@ -45585,9 +45615,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1763957039}
   serializedVersion: 2
-  m_Mass: 4.6875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -45629,7 +45659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &1767068366 stripped
 Transform:
@@ -48031,7 +48061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &1887694928
 GameObject:
@@ -48234,7 +48264,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000023283064, y: 0.037192464, z: -0.0000000027939677}
+  m_ConnectedAnchor: {x: -0.000000060070306, y: 0.037192464, z: -0.000000078231096}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -48275,9 +48305,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1895351965}
   serializedVersion: 2
-  m_Mass: 2.8125
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -48307,7 +48337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &1895369517
 GameObject:
@@ -48354,7 +48384,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000036947895, y: 0.026858365, z: 0.0005865118}
+  m_ConnectedAnchor: {x: -0.000036956277, y: 0.026858365, z: 0.0005865386}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -48395,9 +48425,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1895369517}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -48427,7 +48457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1 &1895440114
 GameObject:
@@ -49282,7 +49312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1930866437
 CharacterJoint:
@@ -49473,9 +49503,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933397273}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -49493,7 +49523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &1933397277
 CharacterJoint:
@@ -51891,7 +51921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &2037981688
 CharacterJoint:
@@ -52154,7 +52184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!144 &2041369311
 CharacterJoint:
@@ -52209,9 +52239,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041369308}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -52679,7 +52709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!54 &2051140594
 Rigidbody:
@@ -53196,7 +53226,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000036975835, y: 0.026858348, z: 0.0005865155}
+  m_ConnectedAnchor: {x: 0.00003697956, y: 0.02685836, z: 0.0005865409}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -53237,9 +53267,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068209167}
   serializedVersion: 2
-  m_Mass: 1.875
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 4
+  m_Drag: 3
+  m_AngularDrag: 3
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -53269,7 +53299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!4 &2068867639 stripped
 Transform:
@@ -55026,7 +55056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!54 &2130505372
 Rigidbody:
@@ -55307,7 +55337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0de8ffe24eecbb49b2e913ed6a0a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spring: {fileID: 0}
+  grabJoint: {fileID: 0}
   connectedTo: {fileID: 0}
 --- !u!1001 &2142810173
 Prefab:
