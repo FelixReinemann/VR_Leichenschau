@@ -13,6 +13,7 @@ public class ManagesScene : MonoBehaviour {
 	}
 
 public GameObject markerPrefab;
+public static GameObject currentActiveBody;
 public Transform player;
 public int markerCount=0;
 }

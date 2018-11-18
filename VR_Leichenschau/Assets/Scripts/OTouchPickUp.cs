@@ -95,10 +95,10 @@ public class OTouchPickUp : MonoBehaviour
         }*/
 
         if(myBeam.activeSelf){
-            CastRayForMenu();
-            if(myButton[0].state == ButtonStates.Pressed && hitButton!=null){
-                hitButton.GetComponent<MenuButton>().OnClick();
-            }
+            if(CastRayForMenu())
+                if(myButton[0].state == ButtonStates.Pressed && hitButton!=null)
+                    hitButton.GetComponent<MenuButton>().OnClick();
+                
         } else {
             hitButton = null;
         }

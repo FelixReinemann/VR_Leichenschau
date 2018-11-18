@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 222111646932500808}
   - component: {fileID: 114108045713902964}
   - component: {fileID: 114735702632612300}
-  - component: {fileID: 114284423947745570}
+  - component: {fileID: 114566753936511350}
   - component: {fileID: 65966781318723198}
   m_Layer: 10
   m_Name: KoerperWenden
@@ -639,7 +639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1656551039497114
 GameObject:
   m_ObjectHideFlags: 1
@@ -2221,17 +2221,6 @@ MonoBehaviour:
   objectToEnable: {fileID: 1640402539782586}
   closeMyMenu: 1
   disableButtonAfterAction: 0
---- !u!114 &114284423947745570
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1031751824034672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9591e8212bff7d4cbdd37e4923b128f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114286121651031364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2585,6 +2574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dressed: {fileID: 0}
   undressed: {fileID: 0}
+  applyAllJointData: 1
 --- !u!114 &114519600333431124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2726,6 +2716,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77e19ec58d4a9e844970103e5bd8946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114566753936511350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031751824034672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded473f316f00134bb851e9c140f7fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114600028505301736
