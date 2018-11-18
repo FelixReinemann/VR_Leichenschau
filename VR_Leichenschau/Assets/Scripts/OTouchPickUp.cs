@@ -49,17 +49,31 @@ public class OTouchPickUp : MonoBehaviour
             //Debug.Log(OVRInput.Get( OVRInput.Axis1D.PrimaryHandTrigger) +" ; "+OVRInput.Get( OVRInput.Axis1D.SecondaryHandTrigger));
             if (grabbedObject == null)
             {
-                Collider[] colObjects = Physics.OverlapSphere(transform.position, col.radius, mask);
-                //Debug.Log("Amount: "+colObjects.Length);
-                GrabableObject script;
-                for (int i = 0; i < colObjects.Length; i++)
+                if (myBeam.activeSelf)
                 {
-                    script = colObjects[i].attachedRigidbody.GetComponent<GrabableObject>();
-                    if (script.grabJoint == null)
+                    GameObject hitTarget;
+                    CastRayForGrabable(out hitTarget);
+                    GrabableObject script = hitTarget.GetComponent<GrabableObject>();
+                    if (script != null)
                     {
                         script.OnGrab(myRigid);
-                        grabbedObject = colObjects[i].attachedRigidbody.gameObject;
-                        break;
+                        grabbedObject = hitTarget;
+                    }
+                }
+                else
+                {
+                    Collider[] colObjects = Physics.OverlapSphere(transform.position, col.radius, mask);
+                    //Debug.Log("Amount: "+colObjects.Length);
+                    GrabableObject script;
+                    for (int i = 0; i < colObjects.Length; i++)
+                    {
+                        script = colObjects[i].attachedRigidbody.GetComponent<GrabableObject>();
+                        if (script.grabJoint == null)
+                        {
+                            script.OnGrab(myRigid);
+                            grabbedObject = colObjects[i].attachedRigidbody.gameObject;
+                            break;
+                        }
                     }
                 }
             }
@@ -130,6 +144,22 @@ public class OTouchPickUp : MonoBehaviour
             return true;
         } else {
             hitButton = null;
+            return false;
+        }
+    }
+
+    public bool CastRayForGrabable(out GameObject targetHit){
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 100, mask))
+        {
+            targetHit = hit.collider.gameObject;
+            //hitButton.Select();
+            //Debug.Log(hitButton.name);
+            return true;
+        }
+        else
+        {
+            targetHit = null;
             return false;
         }
     }
