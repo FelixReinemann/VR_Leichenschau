@@ -35,6 +35,8 @@ public class OTouchPickUp : MonoBehaviour
     public ControllerButton[] myButton;
     public GameObject myBeam;
 
+    public bool teleGrab=false;
+
     // Update is called once per frame
 
     RaycastHit hit;
@@ -49,7 +51,7 @@ public class OTouchPickUp : MonoBehaviour
             //Debug.Log(OVRInput.Get( OVRInput.Axis1D.PrimaryHandTrigger) +" ; "+OVRInput.Get( OVRInput.Axis1D.SecondaryHandTrigger));
             if (grabbedObject == null)
             {
-                if (myBeam.activeSelf)
+                if (myBeam.activeSelf && teleGrab)
                 {
                     GameObject hitTarget;
                     if(CastRayForGrabable(out hitTarget)){
@@ -193,9 +195,11 @@ public class OTouchPickUp : MonoBehaviour
     }
 
     public bool CastRayForGround(out Vector3 _position){
+        //Debug.Log("casting for ground");
         RaycastHit hit;
-        int groundMask = LayerMask.NameToLayer("Teleportable");
+        int groundMask = 1 << LayerMask.NameToLayer("Teleportable");
         if(Physics.Raycast(transform.position,transform.forward,out hit,100f,groundMask)){
+            //Debug.Log("hit "+hit.collider.name);
             _position = hit.point;
             return true;
         }

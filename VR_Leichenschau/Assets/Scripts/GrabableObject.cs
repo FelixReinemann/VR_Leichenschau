@@ -41,7 +41,7 @@ public class GrabableObject : MonoBehaviour {
 	}
 
 	public void OnGrab(Rigidbody hand){
-		Debug.Log("grab got called");
+		//Debug.Log("grab got called");
 		if(grabJoint!=null){
 			return;
 		}

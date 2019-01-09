@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9052929, g: 0.8933168, b: 0.95295066, a: 1}
+  m_IndirectSpecularColor: {r: 0.797927, g: 0.7742521, b: 0.89628965, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27912,6 +27912,11 @@ Prefab:
       propertyPath: undressed
       value: 
       objectReference: {fileID: 113138230}
+    - target: {fileID: 114877751316446176, guid: 9ae31119db204264c96293567dc2426d,
+        type: 2}
+      propertyPath: teleGrab
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae31119db204264c96293567dc2426d, type: 2}
   m_IsPrefabAsset: 0
