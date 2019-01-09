@@ -236,6 +236,7 @@ public class OTouchPickUp : MonoBehaviour
             Vector3 spawnPos = hit.point+Vector3.up*0.15f;
             Vector3 playerPos = ManagesScene.singleton.player.position;
             Quaternion spawnRot = Quaternion.LookRotation(spawnPos - playerPos, Vector3.up);
+            spawnRot = Quaternion.Euler(0f,spawnRot.eulerAngles.y,0f);
             GameObject newMarker = Instantiate(ManagesScene.singleton.markerPrefab, spawnPos, spawnRot);
             ManagesScene.singleton.markerCount++;
             newMarker.GetComponentInChildren<UnityEngine.UI.Text>().text = ManagesScene.singleton.markerCount.ToString();
