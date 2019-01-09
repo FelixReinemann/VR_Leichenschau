@@ -59,7 +59,7 @@ public class GrabableObject : MonoBehaviour {
 		myRigid.useGravity = false;
 		//myRigid.isKinematic = true;
 		//spring.connectedAnchor = grabbedTo.position;
-		ChangeAllChildComponents someScript = GetComponentInParent<Animator>().GetComponent<ChangeAllChildComponents>();
+		ChangeAllChildComponents someScript = GetComponentInParent<Animator>()?.GetComponent<ChangeAllChildComponents>();
 		if(someScript!=null){
 			someScript.drag=10f;
 		}
